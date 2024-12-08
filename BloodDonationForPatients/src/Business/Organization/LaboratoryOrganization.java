@@ -11,19 +11,23 @@ import java.util.ArrayList;
 
 /**
  *
- * @author saiku
+ * @author krish19
  */
-public class LaboratoryOrganization extends Organization{
-        public LaboratoryOrganization(String name, OrganizationDirectory parent) {
+public class LaboratoryOrganization extends Organization {
+
+    // Constructor for the LaboratoryOrganization class
+    public LaboratoryOrganization(String name, OrganizationDirectory parent) {
+        // If name is null, assign a default Laboratory value, otherwise use the provided name
         super(name == null ? Organization.Type.Laboratory.getValue() : name, parent);
     }
     
+    // Method to get the list of roles supported by this organization
     @Override
     public ArrayList<Role> getSupportedRole() {
+        // Initialize the roles list and add LabEmployeeRole
         ArrayList<Role> roles = new ArrayList();
         roles.add(new LabEmployeeRole());
-        return roles;
+        return roles; // Return the list of roles
     }
-     
-    
 }
+

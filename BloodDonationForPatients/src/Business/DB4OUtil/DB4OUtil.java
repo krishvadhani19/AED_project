@@ -18,39 +18,33 @@ import java.nio.file.Paths;
 
 /**
  *
- * @author nitin
+ * @author krish19
  */
 public class DB4OUtil {
-    
-     private static final String FILENAME = Paths.get("Databank.db4o").toAbsolutePath().toString();// path to the data store
+
+    // Path to the data store
+    private static final String FILENAME = Paths.get("Databank.db4o").toAbsolutePath().toString(); 
     private static DB4OUtil dB4OUtil;
-    
-    public synchronized static DB4OUtil getInstance(){
-        if (dB4OUtil == null){
+
+    // Singleton pattern to get a single instance of DB4OUtil
+    public synchronized static DB4OUtil getInstance() {
+        if (dB4OUtil == null) {
             dB4OUtil = new DB4OUtil();
         }
         return dB4OUtil;
     }
 
-    protected synchronized static void shutdown(ObjectContainer conn) {
-        if (conn != null) {
-            conn.close();
-        }
-    }
-
+    // Creates a connection to the database
     private ObjectContainer createConnection() {
         try {
-
             EmbeddedConfiguration config = Db4oEmbedded.newConfiguration();
-//            config.common().add(new TransparentPersistenceSupport());
-            //Controls the number of objects in memory
+            // Controls the number of objects in memory
             config.common().activationDepth(Integer.MAX_VALUE);
-            //Controls the depth/level of updation of Object
+            // Controls the depth/level of object updates
             config.common().updateDepth(Integer.MAX_VALUE);
 
-            //Register your top most Class here
-            config.common().objectClass(EcoSystem.class).cascadeOnUpdate(true); // Change to the object you want to save
-            
+            // Register the top-most class for cascading updates
+            config.common().objectClass(EcoSystem.class).cascadeOnUpdate(true); 
             ObjectContainer db = Db4oEmbedded.openFile(config, FILENAME);
             return db;
         } catch (Exception ex) {
@@ -59,34 +53,41 @@ public class DB4OUtil {
         return null;
     }
 
+    // Stores the EcoSystem object in the database
     public synchronized void storeSystem(EcoSystem system) {
         ObjectContainer conn = createConnection();
-        File f= new File(FILENAME);
+        File f = new File(FILENAME);
         try {
-            f.delete();
-            f.createNewFile();
-        }
-        catch (Exception e) {
-            
+            f.delete(); // Remove old data file
+            f.createNewFile(); // Create a new data file
+        } catch (Exception e) {
+            // Handle exception silently
         }
         conn.store(system);
         conn.commit();
         conn.close();
     }
-    
-    public EcoSystem retrieveSystem(){
+
+    // Retrieves the EcoSystem object from the database
+    public EcoSystem retrieveSystem() {
         ObjectContainer conn = createConnection();
-        ObjectSet<EcoSystem> systems = conn.query(EcoSystem.class); // Change to the object you want to save
+        ObjectSet<EcoSystem> systems = conn.query(EcoSystem.class); // Query for stored EcoSystem objects
         EcoSystem system;
-        if (systems.size() == 0){
-            system = ConfigureASystem.configure();  // If there's no System in the record, create a new one
+        if (systems.size() == 0) {
+            system = ConfigureASystem.configure(); // Create a new system if none exists
             System.out.println("size==0");
-        }
-        else{
-            system = systems.get(systems.size()-1);
-             System.out.println("size not 0");
+        } else {
+            system = systems.get(systems.size() - 1); // Retrieve the latest EcoSystem object
+            System.out.println("size not 0");
         }
         conn.close();
         return system;
+    }
+
+    // Shuts down the database connection
+    protected synchronized static void shutdown(ObjectContainer conn) {
+        if (conn != null) {
+            conn.close();
+        }
     }
 }

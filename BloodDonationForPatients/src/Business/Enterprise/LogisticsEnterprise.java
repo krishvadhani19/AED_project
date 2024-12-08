@@ -10,17 +10,20 @@ import java.util.ArrayList;
 
 /**
  *
- * @author balumullamuri
+ * @author krish19
  */
 public class LogisticsEnterprise extends Enterprise {
-    
+
+    // Constructor to initialize the LogisticsEnterprise with a name
     public LogisticsEnterprise(String name){
         super(name,EnterpriseType.Logistics);
         this.addOrganizationType(Type.Logistics);
     }
+
+    // Method to get supported roles (currently returns null)
     @Override
     public ArrayList<Role> getSupportedRole() {
         return null;
     }
-    
 }
+

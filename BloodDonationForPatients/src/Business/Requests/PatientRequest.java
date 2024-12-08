@@ -12,7 +12,7 @@ import java.util.Date;
 
 /**
  *
- * @author balumullamuri
+ * @author krish19
  */
 public class PatientRequest {
 
@@ -38,10 +38,12 @@ public class PatientRequest {
     private String imagePath;
     private byte[] dP;
 
+    // Constructor to initialize the directory
     public PatientRequest(PatientRequestDirectory directory) {
         this.directory = directory;
     }
 
+    // Getter and Setter methods for profile picture
     public byte[] getdP() {
         return dP;
     }
@@ -50,6 +52,7 @@ public class PatientRequest {
         this.dP = dP;
     }
 
+    // Getter and Setter methods for image path
     public String getImagePath() {
         return imagePath;
     }
@@ -58,7 +61,7 @@ public class PatientRequest {
         this.imagePath = imagePath;
     }
 
-// Getter Setter Functions
+    // Getter and Setter methods for patient details
     public String getName() {
         return name;
     }
@@ -107,6 +110,7 @@ public class PatientRequest {
         this.gender = gender;
     }
 
+    // Getter and Setter methods for address details
     public String getStreetAddress() {
         return streetAddress;
     }
@@ -147,25 +151,16 @@ public class PatientRequest {
         this.emailID = emailID;
     }
 
-    public String getStatus() {
-        return status;
+    // Method to set and get the cancer diagnosis date
+    public void setCancerDiagnosedDate(Date date) {
+        this.cancerDiagnosedDate = date;
     }
 
-    public void setStatus(String status) {
-        if ((volume != 0) && (BloodRequestStatuses.RequestStatus.LeftInventory.getValue().equals(status))) {
-            this.directory.registerBloodRequestForInventory(bloodType, this, volume);
-        }
-        this.status = status;
+    public Date getCancerDiagnosedDate() {
+        return this.cancerDiagnosedDate;
     }
 
-    public boolean isLabConfirmation() {
-        return labConfirmation;
-    }
-
-    public void setLabConfirmation(boolean labConfirmation) {
-        this.labConfirmation = labConfirmation;
-    }
-
+    // Setter and Getter for BloodType and Volume
     public BloodType getBloodType() {
         return bloodType;
     }
@@ -182,17 +177,31 @@ public class PatientRequest {
         this.bloodType = bloodType;
     }
 
+    // Getter and Setter for lab confirmation status
+    public boolean isLabConfirmation() {
+        return labConfirmation;
+    }
+
+    public void setLabConfirmation(boolean labConfirmation) {
+        this.labConfirmation = labConfirmation;
+    }
+
+    // Status setter with logic to handle inventory requests
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        if ((volume != 0) && (BloodRequestStatuses.RequestStatus.LeftInventory.getValue().equals(status))) {
+            this.directory.registerBloodRequestForInventory(bloodType, this, volume);
+        }
+        this.status = status;
+    }
+
+    // Overridden toString method to return receiver ID
     @Override
     public String toString() {
         return receiverID;
     }
-
-    public void setCancerDiagnosedDate(Date date) {
-        this.cancerDiagnosedDate = date;
-    }
-
-    public Date getCancerDiagnosedDate() {
-        return this.cancerDiagnosedDate;
-    }
-
 }
+

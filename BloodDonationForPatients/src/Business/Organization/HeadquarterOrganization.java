@@ -11,18 +11,21 @@ import java.util.ArrayList;
 
 /**
  *
- * @author saiku
+ * @author krish19
  */
 public class HeadquarterOrganization extends Organization {
-     public HeadquarterOrganization(String name, OrganizationDirectory parent) {
+
+    // Constructor for HeadquarterOrganization, initializes with the given name or default to "Headquarter"
+    public HeadquarterOrganization(String name, OrganizationDirectory parent) {
         super(name == null ? Organization.Type.Headquarter.getValue() : name, parent);
     }
-    
+
+    // Returns the list of roles supported by the HeadquarterOrganization
     @Override
     public ArrayList<Role> getSupportedRole() {
         ArrayList<Role> roles = new ArrayList();
-        roles.add(new CaseManagerRole());
+        roles.add(new CaseManagerRole()); // Adds CaseManagerRole to the list of roles
         return roles;
     }
-    
 }
+

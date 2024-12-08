@@ -14,10 +14,11 @@ import javax.swing.JFrame;
 
 /**
  *
- * @author balumullamuri
+ * @author krish19
  */
 public abstract class Role {
 
+    // Enum to define different roles in the system
     public enum RoleType {
         Admin("Admin"),
         CaseManager("Case Manager"),
@@ -32,16 +33,19 @@ public abstract class Role {
             this.value = value;
         }
 
+        // Getter for role value
         public String getValue() {
             return value;
         }
 
+        // Override toString to return the role name
         @Override
         public String toString() {
             return value;
         }
     }
 
+    // Abstract method to create a work area
     public abstract JPanel createWorkArea(JPanel userProcessContainer,
             UserAccount account,
             Organization organization,
@@ -49,6 +53,7 @@ public abstract class Role {
             EcoSystem business,
             Network network);
 
+    // Override toString method to return the role class name
     @Override
     public String toString() {
         return this.getClass().getName();

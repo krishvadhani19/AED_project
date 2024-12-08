@@ -16,11 +16,14 @@ import userinterface.LogisticsOfficerRole.LogisticsOfficerWorkAreaJPanel;
 
 /**
  *
- * @author balumullamuri
+ * @author krish19
  */
 public class LogisticsOfficerRole extends Role {
+
+    // Method to create the work area for the Logistics Officer role
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSystem business, Network network) {
+        // Returning the specific Logistics Officer Work Area Panel
         return new LogisticsOfficerWorkAreaJPanel(account, (LogisticsOrganization) organization, enterprise, business, network);
     }
 }

@@ -6,17 +6,18 @@ package Business.WorkQueue;
 
 /**
  *
- * @author balumullamuri
+ * @author krish19
  */
 public class System_Coordinator_Test_WorkRequest extends WorkRequest {
     private String testResult;
 
+    // Getter method to retrieve the test result
     public String getTestResult() {
         return testResult;
     }
 
+    // Setter method to assign the test result
     public void setTestResult(String testResult) {
         this.testResult = testResult;
     }
-    
 }

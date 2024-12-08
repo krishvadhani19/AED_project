@@ -19,9 +19,11 @@ import userinterface.LabEmployeeRole.LabEmployeeWorkAreaJPanel;
  * @author balumullamuri
  */
 public class LabEmployeeRole extends Role {
-    
+
+    // Method to create work area for the lab employee
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSystem business, Network network) {
+        // Return new work area panel specific to lab employee
         return new LabEmployeeWorkAreaJPanel(account, (LaboratoryOrganization) organization, enterprise, business, network);
     }
 }

@@ -10,19 +10,24 @@ import java.util.ArrayList;
 
 /**
  *
- * @author saiku
+ * @author krish19
  */
 public class AdminOrganization extends Organization{
 
+    // Constructor to initialize the organization with type Admin
     public AdminOrganization(String name, OrganizationDirectory parent) {
         super(Type.Admin.getValue(), parent);
     }
-    
+
     @Override
+    // Method to return the list of roles supported by the Admin Organization
     public ArrayList<Role> getSupportedRole() {
         ArrayList<Role> roles = new ArrayList();
+        
+        // Adding the AdminRole to the list of supported roles
         roles.add(new AdminRole());
-        return roles;
+        
+        return roles; // Returning the list of roles
     }
-     
 }
+

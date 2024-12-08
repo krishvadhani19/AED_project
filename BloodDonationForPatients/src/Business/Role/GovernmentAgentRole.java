@@ -16,13 +16,14 @@ import javax.swing.JPanel;
 import userinterface.GovernmentAgentRole.GovernmentCoordinatorWorkAreaJPanel;
 /**
  *
- * @author nitin
+ * @author krish19
  */
 public class GovernmentAgentRole extends Role {
-     @Override
+
+    // This method creates the work area for the Government Agent
+    @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSystem business, Network network) {
         return new GovernmentCoordinatorWorkAreaJPanel(account, (GovernmentOrganization) organization, enterprise, business, network);
     }
-
-    
 }
+

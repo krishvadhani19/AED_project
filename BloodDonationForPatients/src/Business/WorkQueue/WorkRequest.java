@@ -13,10 +13,11 @@ import java.util.Date;
 
 /**
  *
- * @author balumullamuri
+ * @author krish19
  */
 public abstract class WorkRequest {
-      private String message;
+    // Class-level variables
+    private String message;
     private UserAccount sender;
     private UserAccount receiver;
     private String status;
@@ -37,12 +38,18 @@ public abstract class WorkRequest {
     private DB4OUtil dB4OUtil = DB4OUtil.getInstance();
     private int requestNumberInt;
 
+    // Static variables
     private static int count = 1;
     private static int ct;
-    
-    
-    
-    
+
+    // Constructor to initialize request number and date
+    public WorkRequest() {
+        count++;
+        this.requestNumberInt = count;
+        requestDate = new Date();
+    }
+
+    // Getter and Setter methods for variables
     public Donor getDonor() {
         return donor;
     }
@@ -58,7 +65,7 @@ public abstract class WorkRequest {
     public void setEnterprise(Enterprise enterprise) {
         this.enterprise = enterprise;
     }
-    
+
     public UserAccount getMedTech() {
         return medTech;
     }
@@ -82,23 +89,6 @@ public abstract class WorkRequest {
     public void setOverallStatus(String overallStatus) {
         this.overallStatus = overallStatus;
     }
-    
-    public WorkRequest(){
-        
-//        System.out.println(dB4OUtil.retrieveSystem().getWorkQueue().getWorkRequestList().size()+"count");
-//        requestNumber = "REQ00000"+ String.valueOf(count);
-        count++;
-        this.requestNumberInt = count;
-        
-        requestDate = new Date();
-    }
-    
-//    public WorkRequest(UserAccount sender, UserAccount receiver) {
-//        count++;
-//        this.sender = sender;
-//        this.receiver = receiver;
-//        this.requestDate = new Date();
-//    }
 
     public String getMessage() {
         return message;
@@ -156,10 +146,11 @@ public abstract class WorkRequest {
         this.actionDate = actionDate;
     }
 
+    // Method for generating request number if not set
     public String getRequestNumber() {
-        if(requestNumber == null) 
+        if (requestNumber == null) 
             this.setRequestNumber(Integer.toString(requestNumberInt));
-        else if(requestNumber.equals("Req number Not set yet"))
+        else if (requestNumber.equals("Req number Not set yet"))
             this.setRequestNumber(Integer.toString(requestNumberInt));
         return requestNumber;
     }
@@ -216,11 +207,9 @@ public abstract class WorkRequest {
         this.patient = patient;
     }
 
-    
-    
-     @Override
+    @Override
     public String toString() {
-        return getRequestNumber().toString() ;
+        return getRequestNumber().toString();
     }
-    
 }
+

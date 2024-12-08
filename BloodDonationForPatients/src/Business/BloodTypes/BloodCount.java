@@ -11,19 +11,21 @@ import java.util.HashMap;
 
 /**
  *
- * @author balumullamuri
+ * @author krish19
  */
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 
 public class BloodCount {
-    HashMap<String, Integer> bloodTypeComboCounts;
+    HashMap<String, Integer> bloodTypeComboCounts; // Stores combinations of blood types and their counts
 
+    // Constructor to initialize the blood type combination counts
     public BloodCount() {
         bloodTypeComboCounts = new HashMap<>();
     }
 
+    // Adds a count for a blood type combination
     public void bloodTypeComboCountAdd(PersonBloodTypes bloodType) {
         ArrayList<String> bloodTypeValues = bloodType.getBloodTypeValuesList();
         Collections.sort(bloodTypeValues);
@@ -32,6 +34,7 @@ public class BloodCount {
         bloodTypeComboCounts.put(bloodTypeCombo, bloodTypeComboCounts.get(bloodTypeCombo) + 1);
     }
 
+    // Adds a custom increment to the count for a blood type combination
     public void bloodTypeComboCountAdd(PersonBloodTypes bloodType, Integer i) {
         ArrayList<String> bloodTypeValues = bloodType.getBloodTypeValuesList();
         Collections.sort(bloodTypeValues);
@@ -40,6 +43,7 @@ public class BloodCount {
         bloodTypeComboCounts.put(bloodTypeCombo, bloodTypeComboCounts.get(bloodTypeCombo) + i);
     }
 
+    // Subtracts a count for a blood type combination
     public void bloodTypeComboCountSubtract(PersonBloodTypes bloodType) {
         ArrayList<String> bloodTypeValues = bloodType.getBloodTypeValuesList();
         Collections.sort(bloodTypeValues);
@@ -47,6 +51,7 @@ public class BloodCount {
         bloodTypeComboCounts.put(bloodTypeCombo, bloodTypeComboCounts.get(bloodTypeCombo) - 1);
     }
 
+    // Returns the current counts of all blood type combinations
     public HashMap<String, Integer> getBloodTypeComboCounts() {
         return bloodTypeComboCounts;
     }

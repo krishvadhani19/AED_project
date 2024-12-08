@@ -16,12 +16,15 @@ import userinterface.LocalClinicStaffRole.LocalClinicWorkAreaJPanel;
 
 /**
  *
- * @author balumullamuri
+ * @author krish19
  */
 public class LocalClinicStaffRole extends Role {
     
+    // Method to create work area for local clinic staff
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSystem business, Network network) {
+        // Return the work area panel for local clinic staff
         return new LocalClinicWorkAreaJPanel(account, (LocalClinicOrganization)organization, enterprise, business, network);
     }
 }
+

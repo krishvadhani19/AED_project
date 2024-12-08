@@ -16,12 +16,14 @@ import userinterface.CaseManagerRole.CaseManagerWorkAreaJPanel;
 
 /**
  *
- * @author balumullamuri
+ * @author krish19
  */
 public class CaseManagerRole extends Role {
-    
-     @Override
+
+    // Creates the work area for the case manager, returning the appropriate JPanel
+    @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSystem business, Network network) {
+        // Return the CaseManagerWorkAreaJPanel with necessary parameters
         return new CaseManagerWorkAreaJPanel(account, (HeadquarterOrganization) organization, enterprise, business, network);
     }
 }

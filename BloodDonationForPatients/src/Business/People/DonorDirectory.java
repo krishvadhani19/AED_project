@@ -8,23 +8,27 @@ import java.util.ArrayList;
 
 /**
  *
- * @author balumullamuri
+ * @author krish19
  */
 public class DonorDirectory {
      private ArrayList<Donor> donorList;
 
-    public ArrayList<Donor> getDonorList() {return donorList;}
-    public void setDonorList(ArrayList<Donor> donorList) {this.donorList = donorList;}
-    
+    // Constructor to initialize the donor list
     public DonorDirectory(){
         donorList = new ArrayList<Donor>();
     }
+
+    // Getter method for donor list
+    public ArrayList<Donor> getDonorList() {return donorList;}
     
+    // Setter method for donor list
+    public void setDonorList(ArrayList<Donor> donorList) {this.donorList = donorList;}
+
+    // Method to add a donor to the list
     public Donor addDonor(Donor donor)
     {
-//        Donor donor = new Donor();
         donorList.add(donor);
         return donor;
     }
-    
 }
+

@@ -10,17 +10,20 @@ import java.util.ArrayList;
 
 /**
  *
- * @author balumullamuri
+ * @author krish19
  */
 public class LaboratoryEnterprise extends Enterprise {
     
+    // Constructor to initialize the LaboratoryEnterprise with the given name
     public LaboratoryEnterprise(String name){
-        super(name,EnterpriseType.Laboratory);
-        this.addOrganizationType(Type.Laboratory);
+        super(name, EnterpriseType.Laboratory);  // Call to superclass constructor
+        this.addOrganizationType(Type.Laboratory);  // Adding organization type
     }
+    
+    // Method to return the list of supported roles (currently returns null)
     @Override
     public ArrayList<Role> getSupportedRole() {
         return null;
     }
-    
 }
+

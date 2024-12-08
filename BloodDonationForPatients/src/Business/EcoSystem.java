@@ -25,7 +25,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author maka
+ * @author krish19
  */
 public class EcoSystem extends Organization {
 
@@ -40,8 +40,10 @@ public class EcoSystem extends Organization {
     private BloodRequestStatuses bloodRequestStatus;
     private DonorApplicationStatuses donorApplicationStatus;
     private BloodInventory inventory;
-    
 
+    private ArrayList<Network> networkList;
+
+    // Private constructor for Singleton pattern
     private EcoSystem() {
         super("Worldcord", null);
         networkList = new ArrayList<Network>();
@@ -56,18 +58,34 @@ public class EcoSystem extends Organization {
         this.inventory = new BloodInventory(this);
     }
 
-    public UserAccountDirectory getUserAccountDirectory() {
-        if (this.userAccountDirectory == null) {
-            userAccountDirectory = new UserAccountDirectory();
-            Employee employee = this.getEmployeeDirectory().createEmployee("sysadmin");
-            UserAccount ua = this.userAccountDirectory.createUserAccount("sysadmin", "sysadmin", employee, new SystemAdminRole());
-
+    // Singleton instance accessor
+    public static EcoSystem getInstance() {
+        if (business == null) {
+            business = new EcoSystem();
         }
-        return this.userAccountDirectory;
+        return business;
     }
 
-    public void setUserAccountDirectory(UserAccountDirectory userAccountDirectory) {
-        this.userAccountDirectory = userAccountDirectory;
+    public DonorDirectory getDonorDirectory() {
+        if (this.donorDirectory == null) {
+            this.donorDirectory = new DonorDirectory();
+        }
+        return donorDirectory;
+    }
+
+    public void setDonorDirectory(DonorDirectory donorDirectory) {
+        this.donorDirectory = donorDirectory;
+    }
+
+    public PatientDirectory getPatientDirectory() {
+        if (this.patientDirectory == null) {
+            this.patientDirectory = new PatientDirectory();
+        }
+        return patientDirectory;
+    }
+
+    public void setPatientDirectory(PatientDirectory patientDirectory) {
+        this.patientDirectory = patientDirectory;
     }
 
     public DonorRequestDirectory getDonorRequestDirectory() {
@@ -92,37 +110,48 @@ public class EcoSystem extends Organization {
         this.patientRequestDirectory = patientRequestDirectory;
     }
 
-    public PatientDirectory getPatientDirectory() {
-        if (this.patientDirectory == null) {
-            this.patientDirectory = new PatientDirectory();
+    public UserAccountDirectory getUserAccountDirectory() {
+        if (this.userAccountDirectory == null) {
+            userAccountDirectory = new UserAccountDirectory();
+            Employee employee = this.getEmployeeDirectory().createEmployee("sysadmin");
+            UserAccount ua = this.userAccountDirectory.createUserAccount("sysadmin", "sysadmin", employee, new SystemAdminRole());
         }
-        return patientDirectory;
+        return this.userAccountDirectory;
     }
 
-    public void setPatientDirectory(PatientDirectory patientDirectory) {
-        this.patientDirectory = patientDirectory;
+    public void setUserAccountDirectory(UserAccountDirectory userAccountDirectory) {
+        this.userAccountDirectory = userAccountDirectory;
     }
 
-    public DonorDirectory getDonorDirectory() {
-        if (this.donorDirectory == null) {
-            this.donorDirectory = new DonorDirectory();
-        }
-        return donorDirectory;
+    public BloodRequestStatuses getBloodRequestStatus() {
+        return bloodRequestStatus;
     }
 
-    public void setDonorDirectory(DonorDirectory donorDirectory) {
-        this.donorDirectory = donorDirectory;
+    public void setBloodRequestStatus(BloodRequestStatuses bloodRequestStatus) {
+        this.bloodRequestStatus = bloodRequestStatus;
     }
 
-    private ArrayList<Network> networkList;
-
-    public static EcoSystem getInstance() {
-        if (business == null) {
-            business = new EcoSystem();
-        }
-        return business;
+    public DonorApplicationStatuses getDonorApplicationStatus() {
+        return donorApplicationStatus;
     }
 
+    public PersonBloodTypes getPersonBloodTypes() {
+        return personBloodTypes;
+    }
+
+    public BloodInventory getInventory() {
+        return inventory;
+    }
+
+    public ArrayList<Network> getNetworkList() {
+        return networkList;
+    }
+
+    public void setNetworkList(ArrayList<Network> networkList) {
+        this.networkList = networkList;
+    }
+
+    // Adds a new network to the list
     public Network createAndAddNetwork() {
         Network network = new Network();
         networkList.add(network);
@@ -136,41 +165,14 @@ public class EcoSystem extends Organization {
         return roleList;
     }
 
-    public void setBloodRequestStatus(BloodRequestStatuses bloodRequestStatus) {
-        this.bloodRequestStatus = bloodRequestStatus;
-    }
-
-    public BloodRequestStatuses getBloodRequestStatus() {
-        return bloodRequestStatus;
-    }
-
-    public ArrayList<Network> getNetworkList() {
-        return networkList;
-    }
-
-    public void setNetworkList(ArrayList<Network> networkList) {
-        this.networkList = networkList;
-    }
-    
-    public PersonBloodTypes getPersonBloodTypes(){
-        return personBloodTypes;
-    }
-
+    // Checks if a username is unique across the system
     public boolean checkIfUserIsUnique(String userName) {
         if (!this.getUserAccountDirectory().checkIfUsernameIsUnique(userName)) {
             return false;
         }
         for (Network network : networkList) {
-
+            // Additional checks for networks can be added here
         }
         return true;
-    }
-    
-    public DonorApplicationStatuses getDonorApplicationStatus(){
-        return donorApplicationStatus;
-    }
-    
-    public BloodInventory getInventory(){
-        return inventory;
     }
 }
