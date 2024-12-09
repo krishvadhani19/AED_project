@@ -75,41 +75,63 @@ public class ManageLegalOfficerProfile extends javax.swing.JPanel {
         jPanel1 = new javax.swing.JPanel();
         jLabel25 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(255, 153, 153));
+        setBackground(new java.awt.Color(0, 153, 153));
 
+        jLabel1.setBackground(new java.awt.Color(0, 153, 153));
         jLabel1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(204, 255, 204));
         jLabel1.setText("Name:");
 
+        jLabel2.setBackground(new java.awt.Color(0, 153, 153));
         jLabel2.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(204, 255, 204));
         jLabel2.setText("Contact:");
 
+        jLabel3.setBackground(new java.awt.Color(0, 153, 153));
         jLabel3.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(204, 255, 204));
         jLabel3.setText("Address:");
 
+        jLabel4.setBackground(new java.awt.Color(0, 153, 153));
         jLabel4.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(204, 255, 204));
         jLabel4.setText("City:");
 
+        jLabel5.setBackground(new java.awt.Color(0, 153, 153));
         jLabel5.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(204, 255, 204));
         jLabel5.setText("State:");
 
+        jLabel6.setBackground(new java.awt.Color(0, 153, 153));
         jLabel6.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(204, 255, 204));
         jLabel6.setText("Gender:");
 
+        jLabel7.setBackground(new java.awt.Color(0, 153, 153));
         jLabel7.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(204, 255, 204));
         jLabel7.setText("DOB:");
 
+        txtName.setBackground(new java.awt.Color(0, 153, 153));
         txtName.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
 
+        txtContact.setBackground(new java.awt.Color(0, 153, 153));
         txtContact.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
 
+        txtAddress.setBackground(new java.awt.Color(0, 153, 153));
         txtAddress.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
 
+        txtCity.setBackground(new java.awt.Color(0, 153, 153));
         txtCity.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
 
+        txtState.setBackground(new java.awt.Color(0, 153, 153));
         txtState.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
 
+        txtDOB.setBackground(new java.awt.Color(0, 153, 153));
         txtDOB.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
 
+        btnSave.setBackground(new java.awt.Color(0, 102, 102));
+        btnSave.setForeground(new java.awt.Color(204, 255, 204));
         btnSave.setText("Save");
         btnSave.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -117,6 +139,8 @@ public class ManageLegalOfficerProfile extends javax.swing.JPanel {
             }
         });
 
+        comboGender.setBackground(new java.awt.Color(0, 153, 153));
+        comboGender.setForeground(new java.awt.Color(204, 255, 204));
         comboGender.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Male", "Female" }));
 
         jPanel1.setBackground(new java.awt.Color(102, 102, 102));
@@ -130,8 +154,7 @@ public class ManageLegalOfficerProfile extends javax.swing.JPanel {
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addComponent(jLabel25, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );

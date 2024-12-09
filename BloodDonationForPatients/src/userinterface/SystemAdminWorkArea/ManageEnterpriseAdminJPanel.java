@@ -159,16 +159,17 @@ private boolean checkUserIdExists(String userName) {
         ));
         jScrollPane2.setViewportView(jTable1);
 
-        setBackground(new java.awt.Color(255, 153, 153));
+        setBackground(new java.awt.Color(0, 153, 153));
         setMinimumSize(new java.awt.Dimension(1150, 770));
         setPreferredSize(new java.awt.Dimension(1150, 720));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel3.setBackground(new java.awt.Color(102, 102, 102));
+        jPanel3.setBackground(new java.awt.Color(0, 102, 102));
         jPanel3.setPreferredSize(new java.awt.Dimension(1550, 70));
 
+        jLabel7.setBackground(new java.awt.Color(204, 255, 204));
         jLabel7.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel7.setForeground(new java.awt.Color(204, 255, 204));
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel7.setText("Manage Admin for Enterprise");
 
@@ -179,19 +180,18 @@ private boolean checkUserIdExists(String userName) {
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 1031, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(479, Short.MAX_VALUE))
+                .addContainerGap(483, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, 44, Short.MAX_VALUE)
-                .addContainerGap())
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                .addGap(0, 12, Short.MAX_VALUE)
+                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1520, -1));
 
-        tblAdminUserName.setBackground(new java.awt.Color(0, 0, 0));
+        tblAdminUserName.setBackground(new java.awt.Color(0, 102, 102));
         tblAdminUserName.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(204, 255, 204)));
         tblAdminUserName.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         tblAdminUserName.setForeground(new java.awt.Color(255, 255, 255));
@@ -223,40 +223,52 @@ private boolean checkUserIdExists(String userName) {
 
         add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 390, 640, 190));
 
-        jPanel2.setBackground(new java.awt.Color(255, 153, 153));
+        jPanel2.setBackground(new java.awt.Color(0, 102, 102));
         jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 255, 204)));
+        jPanel2.setForeground(new java.awt.Color(204, 255, 204));
         jPanel2.setPreferredSize(new java.awt.Dimension(250, 400));
         jPanel2.setRequestFocusEnabled(false);
         jPanel2.setVerifyInputWhenFocusTarget(false);
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(204, 255, 204));
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setText("Create Admin");
 
         jLabel5.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(204, 255, 204));
         jLabel5.setText("Enterprise:");
 
+        txtName.setBackground(new java.awt.Color(0, 102, 102));
         txtName.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         txtName.setEnabled(false);
 
         jLabel6.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(204, 255, 204));
         jLabel6.setText("Admin Name:");
 
+        txtAdminName.setBackground(new java.awt.Color(0, 102, 102));
         txtAdminName.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         txtAdminName.setEnabled(false);
 
         jLabel2.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(204, 255, 204));
         jLabel2.setText("Username:");
 
+        txtUserName.setBackground(new java.awt.Color(0, 102, 102));
         txtUserName.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         txtUserName.setEnabled(false);
 
         jLabel4.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(204, 255, 204));
         jLabel4.setText("Password:");
 
+        txtPassword.setBackground(new java.awt.Color(0, 102, 102));
         txtPassword.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         txtPassword.setEnabled(false);
 
+        btnCreateAdmin.setBackground(new java.awt.Color(0, 153, 153));
+        btnCreateAdmin.setForeground(new java.awt.Color(204, 255, 204));
         btnCreateAdmin.setText("Create Admin");
         btnCreateAdmin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -268,7 +280,6 @@ private boolean checkUserIdExists(String userName) {
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
@@ -288,12 +299,15 @@ private boolean checkUserIdExists(String userName) {
                                 .addComponent(txtUserName, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel2Layout.createSequentialGroup()
                                 .addComponent(jLabel6)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 89, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 86, Short.MAX_VALUE)
                                 .addComponent(txtAdminName, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(143, 143, 143)
                         .addComponent(btnCreateAdmin)
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
@@ -319,12 +333,12 @@ private boolean checkUserIdExists(String userName) {
                     .addComponent(txtPassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(27, 27, 27)
                 .addComponent(btnCreateAdmin)
-                .addContainerGap(55, Short.MAX_VALUE))
+                .addContainerGap(60, Short.MAX_VALUE))
         );
 
         add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, 380, 400));
 
-        enterpriseJTable.setBackground(new java.awt.Color(0, 0, 0));
+        enterpriseJTable.setBackground(new java.awt.Color(0, 102, 102));
         enterpriseJTable.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(204, 255, 204)));
         enterpriseJTable.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         enterpriseJTable.setForeground(new java.awt.Color(255, 255, 255));

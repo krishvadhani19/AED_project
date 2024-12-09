@@ -117,22 +117,26 @@ public class PatientListJPanel extends javax.swing.JPanel {
         jPanel3 = new javax.swing.JPanel();
         jLabel25 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(255, 153, 153));
+        setBackground(new java.awt.Color(0, 153, 153));
         setMinimumSize(new java.awt.Dimension(1150, 730));
         setPreferredSize(new java.awt.Dimension(1150, 730));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(204, 255, 204));
         jLabel1.setText("Patients in need of Blood Transfusion");
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 80, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(204, 255, 204));
         jLabel2.setText("Assign the Patient to a Hospital");
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 300, -1, -1));
 
+        btnAssign.setBackground(new java.awt.Color(0, 102, 102));
         btnAssign.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        btnAssign.setForeground(new java.awt.Color(204, 255, 204));
         btnAssign.setText("Assign");
-        btnAssign.setBorder(new javax.swing.border.MatteBorder(null));
+        btnAssign.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnAssign.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAssignActionPerformed(evt);
@@ -140,7 +144,7 @@ public class PatientListJPanel extends javax.swing.JPanel {
         });
         add(btnAssign, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 500, 120, 30));
 
-        tblHospital.setBackground(new java.awt.Color(0, 0, 0));
+        tblHospital.setBackground(new java.awt.Color(0, 102, 102));
         tblHospital.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         tblHospital.setForeground(new java.awt.Color(255, 255, 255));
         tblHospital.setModel(new javax.swing.table.DefaultTableModel(
@@ -165,7 +169,7 @@ public class PatientListJPanel extends javax.swing.JPanel {
 
         add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 340, 810, 150));
 
-        tblAssignment.setBackground(new java.awt.Color(0, 0, 0));
+        tblAssignment.setBackground(new java.awt.Color(0, 102, 102));
         tblAssignment.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         tblAssignment.setForeground(new java.awt.Color(255, 255, 255));
         tblAssignment.setModel(new javax.swing.table.DefaultTableModel(
@@ -190,11 +194,12 @@ public class PatientListJPanel extends javax.swing.JPanel {
 
         add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 120, 900, 170));
 
-        jPanel3.setBackground(new java.awt.Color(102, 102, 102));
+        jPanel3.setBackground(new java.awt.Color(0, 102, 102));
         jPanel3.setPreferredSize(new java.awt.Dimension(926, 70));
 
+        jLabel25.setBackground(new java.awt.Color(204, 255, 204));
         jLabel25.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jLabel25.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel25.setForeground(new java.awt.Color(204, 255, 204));
         jLabel25.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel25.setText("Connect Patient to Hospital");
 
@@ -203,16 +208,15 @@ public class PatientListJPanel extends javax.swing.JPanel {
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(116, 116, 116)
+                .addGap(59, 59, 59)
                 .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 910, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(614, Short.MAX_VALUE))
+                .addContainerGap(671, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel25, javax.swing.GroupLayout.DEFAULT_SIZE, 44, Short.MAX_VALUE)
-                .addContainerGap())
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                .addGap(0, 12, Short.MAX_VALUE)
+                .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(2, 0, 1640, -1));

@@ -86,16 +86,19 @@ public class PatientStatusJPanel extends javax.swing.JPanel {
         patientTable1 = new javax.swing.JTable();
         jLabel2 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(255, 153, 153));
+        setBackground(new java.awt.Color(0, 153, 153));
+        setForeground(new java.awt.Color(204, 255, 204));
         setMinimumSize(new java.awt.Dimension(1100, 720));
         setPreferredSize(new java.awt.Dimension(1150, 720));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel1.setBackground(new java.awt.Color(0, 153, 153));
+        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(204, 255, 204));
         jLabel1.setText("All Patient Requests");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 360, -1, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 400, -1, -1));
 
-        patientTable.setBackground(new java.awt.Color(0, 0, 0));
+        patientTable.setBackground(new java.awt.Color(0, 102, 102));
         patientTable.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         patientTable.setForeground(new java.awt.Color(255, 255, 255));
         patientTable.setModel(new javax.swing.table.DefaultTableModel(
@@ -119,32 +122,33 @@ public class PatientStatusJPanel extends javax.swing.JPanel {
         patientTable.setRowHeight(30);
         jScrollPane1.setViewportView(patientTable);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 150, 730, 190));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 150, 730, 190));
 
-        jButton2.setBackground(new java.awt.Color(31, 31, 31));
-        jButton2.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
+        jButton2.setBackground(new java.awt.Color(0, 102, 102));
+        jButton2.setFont(new java.awt.Font("Times New Roman", 1, 20)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(204, 255, 204));
         jButton2.setText("Delete");
-        jButton2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton2.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
-        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 640, 120, 40));
+        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 680, 120, 40));
 
-        jPanel3.setBackground(new java.awt.Color(31, 31, 31));
+        jPanel3.setBackground(new java.awt.Color(0, 102, 102));
         jPanel3.setPreferredSize(new java.awt.Dimension(926, 70));
         jPanel3.setLayout(new java.awt.GridLayout(1, 0));
 
-        jLabel25.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jLabel25.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel25.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        jLabel25.setForeground(new java.awt.Color(204, 255, 204));
         jLabel25.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel25.setText("                                                                         Patients' Status");
         jPanel3.add(jLabel25);
 
         add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1800, -1));
 
-        patientTable1.setBackground(new java.awt.Color(0, 0, 0));
+        patientTable1.setBackground(new java.awt.Color(0, 102, 102));
         patientTable1.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         patientTable1.setForeground(new java.awt.Color(255, 255, 255));
         patientTable1.setModel(new javax.swing.table.DefaultTableModel(
@@ -168,9 +172,11 @@ public class PatientStatusJPanel extends javax.swing.JPanel {
         patientTable1.setRowHeight(30);
         jScrollPane2.setViewportView(patientTable1);
 
-        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 410, 730, 210));
+        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 450, 730, 210));
 
-        jLabel2.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel2.setBackground(new java.awt.Color(0, 153, 153));
+        jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(204, 255, 204));
         jLabel2.setText("Patients In Need Of Blood Transfusion");
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 100, -1, -1));
     }// </editor-fold>//GEN-END:initComponents

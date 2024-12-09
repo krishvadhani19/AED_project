@@ -74,10 +74,11 @@ public class ManageEnterpriseJPanel extends javax.swing.JPanel {
         jLabel7 = new javax.swing.JLabel();
         btnDelete = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(255, 153, 153));
+        setBackground(new java.awt.Color(0, 153, 153));
+        setForeground(new java.awt.Color(204, 255, 204));
         setPreferredSize(new java.awt.Dimension(1150, 720));
 
-        tblEnterprises.setBackground(new java.awt.Color(0, 0, 0));
+        tblEnterprises.setBackground(new java.awt.Color(0, 102, 102));
         tblEnterprises.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         tblEnterprises.setForeground(new java.awt.Color(255, 255, 255));
         tblEnterprises.setModel(new javax.swing.table.DefaultTableModel(
@@ -109,20 +110,24 @@ public class ManageEnterpriseJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tblEnterprises);
 
-        jPanel1.setBackground(new java.awt.Color(241, 250, 238));
+        jPanel1.setBackground(new java.awt.Color(0, 102, 102));
+        jPanel1.setForeground(new java.awt.Color(204, 255, 204));
 
+        networkJComboBox.setBackground(new java.awt.Color(0, 102, 102));
         networkJComboBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 networkJComboBoxActionPerformed(evt);
             }
         });
 
+        enterpriseTypeJComboBox.setBackground(new java.awt.Color(0, 102, 102));
         enterpriseTypeJComboBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 enterpriseTypeJComboBoxActionPerformed(evt);
             }
         });
 
+        txtName.setBackground(new java.awt.Color(0, 102, 102));
         txtName.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         txtName.setPreferredSize(new java.awt.Dimension(6, 30));
         txtName.addActionListener(new java.awt.event.ActionListener() {
@@ -131,6 +136,7 @@ public class ManageEnterpriseJPanel extends javax.swing.JPanel {
             }
         });
 
+        txtZipCode.setBackground(new java.awt.Color(0, 102, 102));
         txtZipCode.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         txtZipCode.setPreferredSize(new java.awt.Dimension(6, 30));
         txtZipCode.addActionListener(new java.awt.event.ActionListener() {
@@ -139,30 +145,40 @@ public class ManageEnterpriseJPanel extends javax.swing.JPanel {
             }
         });
 
+        txtEmail.setBackground(new java.awt.Color(0, 102, 102));
         txtEmail.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         txtEmail.setPreferredSize(new java.awt.Dimension(6, 30));
 
+        txtContact.setBackground(new java.awt.Color(0, 102, 102));
         txtContact.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         txtContact.setPreferredSize(new java.awt.Dimension(6, 30));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(204, 255, 204));
         jLabel1.setText("Enterprise");
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(204, 255, 204));
         jLabel2.setText("Network");
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(204, 255, 204));
         jLabel3.setText("Zip Code");
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(204, 255, 204));
         jLabel4.setText("Name");
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(204, 255, 204));
         jLabel5.setText("Email");
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(204, 255, 204));
         jLabel6.setText("Contact");
 
+        createButton.setBackground(new java.awt.Color(0, 153, 153));
+        createButton.setForeground(new java.awt.Color(204, 255, 204));
         createButton.setText("Create");
         createButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -171,6 +187,7 @@ public class ManageEnterpriseJPanel extends javax.swing.JPanel {
         });
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(204, 255, 204));
         jLabel7.setText("Create Enterprise");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -261,22 +278,23 @@ public class ManageEnterpriseJPanel extends javax.swing.JPanel {
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 1005, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(488, 488, 488)
-                        .addComponent(btnDelete))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(395, 395, 395)
-                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(108, Short.MAX_VALUE))
+                        .addComponent(btnDelete)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 503, Short.MAX_VALUE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(230, 230, 230))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(39, 39, 39)
+                .addGap(28, 28, 28)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addGap(29, 29, 29)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(29, 29, 29)
                 .addComponent(btnDelete)
-                .addContainerGap(26, Short.MAX_VALUE))
+                .addContainerGap(38, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

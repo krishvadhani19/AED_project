@@ -44,7 +44,6 @@ public class LoginJPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        logo = new javax.swing.JLabel();
         lblUserName = new javax.swing.JLabel();
         txtUserName = new javax.swing.JTextField();
         lblPassword = new javax.swing.JLabel();
@@ -52,23 +51,26 @@ public class LoginJPanel extends javax.swing.JPanel {
         btnLogin = new javax.swing.JButton();
         btnCustomerMode = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(255, 153, 153));
+        setBackground(new java.awt.Color(0, 153, 153));
         setMaximumSize(new java.awt.Dimension(1280, 720));
         setMinimumSize(new java.awt.Dimension(1280, 720));
         setPreferredSize(new java.awt.Dimension(1280, 720));
 
-        logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/world-cord-logo.png"))); // NOI18N
-        logo.setPreferredSize(new java.awt.Dimension(65, 65));
-
         lblUserName.setBackground(new java.awt.Color(255, 255, 255));
         lblUserName.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        lblUserName.setForeground(new java.awt.Color(255, 255, 255));
+        lblUserName.setForeground(new java.awt.Color(204, 255, 204));
         lblUserName.setText("Username");
 
+        txtUserName.setBackground(new java.awt.Color(0, 153, 153));
+
         lblPassword.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        lblPassword.setForeground(new java.awt.Color(255, 255, 255));
+        lblPassword.setForeground(new java.awt.Color(204, 255, 204));
         lblPassword.setText("Password");
 
+        txtPassword.setBackground(new java.awt.Color(0, 153, 153));
+
+        btnLogin.setBackground(new java.awt.Color(0, 102, 102));
+        btnLogin.setForeground(new java.awt.Color(204, 255, 204));
         btnLogin.setText("Login");
         btnLogin.setBorder(new javax.swing.border.MatteBorder(null));
         btnLogin.addActionListener(new java.awt.event.ActionListener() {
@@ -77,6 +79,8 @@ public class LoginJPanel extends javax.swing.JPanel {
             }
         });
 
+        btnCustomerMode.setBackground(new java.awt.Color(0, 102, 102));
+        btnCustomerMode.setForeground(new java.awt.Color(204, 255, 204));
         btnCustomerMode.setText("Home");
         btnCustomerMode.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -93,25 +97,21 @@ public class LoginJPanel extends javax.swing.JPanel {
                 .addComponent(btnCustomerMode, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(26, 26, 26))
             .addGroup(layout.createSequentialGroup()
-                .addGap(29, 29, 29)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(lblUserName)
-                        .addComponent(lblPassword)
-                        .addComponent(txtUserName)
-                        .addComponent(txtPassword)
-                        .addComponent(btnLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(logo, javax.swing.GroupLayout.PREFERRED_SIZE, 588, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(663, Short.MAX_VALUE))
+                .addGap(415, 415, 415)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(lblUserName)
+                    .addComponent(lblPassword)
+                    .addComponent(txtUserName)
+                    .addComponent(txtPassword)
+                    .addComponent(btnLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(465, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(17, 17, 17)
                 .addComponent(btnCustomerMode)
-                .addGap(18, 18, 18)
-                .addComponent(logo, javax.swing.GroupLayout.PREFERRED_SIZE, 281, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 270, Short.MAX_VALUE)
                 .addComponent(lblUserName)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtUserName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -121,7 +121,7 @@ public class LoginJPanel extends javax.swing.JPanel {
                 .addComponent(txtPassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(26, 26, 26)
                 .addComponent(btnLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(200, Short.MAX_VALUE))
+                .addGap(249, 249, 249))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -215,7 +215,6 @@ public class LoginJPanel extends javax.swing.JPanel {
     private javax.swing.JButton btnLogin;
     private javax.swing.JLabel lblPassword;
     private javax.swing.JLabel lblUserName;
-    private javax.swing.JLabel logo;
     private javax.swing.JPasswordField txtPassword;
     private javax.swing.JTextField txtUserName;
     // End of variables declaration//GEN-END:variables

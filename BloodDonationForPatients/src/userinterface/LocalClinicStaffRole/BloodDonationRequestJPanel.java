@@ -97,18 +97,22 @@ public class BloodDonationRequestJPanel extends javax.swing.JPanel {
         tblHlaAvailability = new javax.swing.JTable();
         jLabel6 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(255, 153, 153));
-        setForeground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(0, 153, 153));
+        setForeground(new java.awt.Color(204, 255, 204));
         setMinimumSize(new java.awt.Dimension(1150, 720));
         setPreferredSize(new java.awt.Dimension(1150, 830));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel1.setBackground(new java.awt.Color(0, 153, 153));
         jLabel1.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(204, 255, 204));
         jLabel1.setText("List of Blood Transfusion Requests");
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 300, -1, -1));
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(376, 247, -1, -1));
 
+        btnApprove.setBackground(new java.awt.Color(0, 102, 102));
         btnApprove.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
+        btnApprove.setForeground(new java.awt.Color(204, 255, 204));
         btnApprove.setText("Approve Request");
         btnApprove.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnApprove.addActionListener(new java.awt.event.ActionListener() {
@@ -118,7 +122,9 @@ public class BloodDonationRequestJPanel extends javax.swing.JPanel {
         });
         add(btnApprove, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 530, 210, 40));
 
+        btnOnHold.setBackground(new java.awt.Color(0, 102, 102));
         btnOnHold.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
+        btnOnHold.setForeground(new java.awt.Color(204, 255, 204));
         btnOnHold.setText("Hold Request");
         btnOnHold.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnOnHold.addActionListener(new java.awt.event.ActionListener() {
@@ -128,6 +134,7 @@ public class BloodDonationRequestJPanel extends javax.swing.JPanel {
         });
         add(btnOnHold, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 530, 190, 40));
 
+        tblBoneMarrowCoordinator.setBackground(new java.awt.Color(0, 102, 102));
         tblBoneMarrowCoordinator.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         tblBoneMarrowCoordinator.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -156,7 +163,7 @@ public class BloodDonationRequestJPanel extends javax.swing.JPanel {
 
         add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 340, 890, 170));
 
-        jPanel3.setBackground(new java.awt.Color(31, 31, 31));
+        jPanel3.setBackground(new java.awt.Color(0, 102, 102));
         jPanel3.setPreferredSize(new java.awt.Dimension(926, 70));
         jPanel3.setLayout(new java.awt.GridLayout(1, 0));
 
@@ -169,6 +176,7 @@ public class BloodDonationRequestJPanel extends javax.swing.JPanel {
 
         add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1570, -1));
 
+        tblHlaAvailability.setBackground(new java.awt.Color(0, 102, 102));
         tblHlaAvailability.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         tblHlaAvailability.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -201,7 +209,9 @@ public class BloodDonationRequestJPanel extends javax.swing.JPanel {
 
         add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 120, 900, 170));
 
+        jLabel6.setBackground(new java.awt.Color(0, 153, 153));
         jLabel6.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(204, 255, 204));
         jLabel6.setText("Blood Bank Inventory");
         add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 80, 330, 30));
     }// </editor-fold>//GEN-END:initComponents

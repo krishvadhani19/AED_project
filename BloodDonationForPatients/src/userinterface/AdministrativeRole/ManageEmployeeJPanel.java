@@ -134,7 +134,6 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
         enterpriseNameTextField.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         enterpriseNameTextField.setBorder(null);
         enterpriseNameTextField.setCaretColor(new java.awt.Color(30, 59, 92));
-        enterpriseNameTextField.setOpaque(false);
         enterpriseNameTextField.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
                 enterpriseNameTextFieldFocusGained(evt);
@@ -146,11 +145,10 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
             }
         });
 
-        setBackground(new java.awt.Color(255, 153, 153));
+        setBackground(new java.awt.Color(0, 153, 153));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        organizationJTable.setBackground(new java.awt.Color(0, 0, 0));
-        organizationJTable.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(204, 255, 204)));
+        organizationJTable.setBackground(new java.awt.Color(0, 102, 102));
         organizationJTable.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         organizationJTable.setForeground(new java.awt.Color(255, 255, 255));
         organizationJTable.setModel(new javax.swing.table.DefaultTableModel(
@@ -177,9 +175,7 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
             }
         });
         organizationJTable.setGridColor(new java.awt.Color(0, 0, 0));
-        organizationJTable.setIntercellSpacing(new java.awt.Dimension(0, 0));
         organizationJTable.setRowHeight(30);
-        organizationJTable.setShowVerticalLines(false);
         organizationJTable.addInputMethodListener(new java.awt.event.InputMethodListener() {
             public void caretPositionChanged(java.awt.event.InputMethodEvent evt) {
             }
@@ -189,19 +185,20 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(organizationJTable);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 240, 670, 300));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 240, 670, 300));
 
-        jLabel1.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel1.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Enterprise:");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 190, -1, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 200, -1, -1));
 
-        jPanel3.setBackground(new java.awt.Color(31, 31, 31));
+        jPanel3.setBackground(new java.awt.Color(0, 102, 102));
         jPanel3.setPreferredSize(new java.awt.Dimension(1550, 70));
 
-        jLabel2.setBackground(new java.awt.Color(255, 153, 153));
-        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 22)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setBackground(new java.awt.Color(0, 153, 153));
+        jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 22)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(204, 255, 204));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("Manage Employee");
 
@@ -209,50 +206,61 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addContainerGap(103, Short.MAX_VALUE)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(74, 74, 74)
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 990, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(587, 587, 587))
+                .addContainerGap(616, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addContainerGap(19, Short.MAX_VALUE)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addGap(0, 30, Short.MAX_VALUE)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1680, -1));
 
-        jPanel2.setBackground(new java.awt.Color(255, 153, 153));
+        jPanel2.setBackground(new java.awt.Color(0, 102, 102));
         jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        jPanel2.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         jPanel2.setPreferredSize(new java.awt.Dimension(250, 400));
         jPanel2.setRequestFocusEnabled(false);
         jPanel2.setVerifyInputWhenFocusTarget(false);
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel6.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel6.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(204, 255, 204));
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel6.setText("Create Employee");
         jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 10, 233, 36));
 
-        jLabel7.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Times New Roman", 1, 20)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(204, 255, 204));
         jLabel7.setText("Name of Employee");
         jPanel2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 290, 180, 26));
 
-        nameSeparator.setForeground(new java.awt.Color(0, 0, 0));
+        nameSeparator.setForeground(new java.awt.Color(255, 255, 255));
         jPanel2.add(nameSeparator, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 160, 300, 10));
 
-        jLabel8.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Times New Roman", 1, 20)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(204, 255, 204));
         jLabel8.setText("Type of Organization");
         jPanel2.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 80, 200, 26));
 
+        nameJTextField.setBackground(new java.awt.Color(0, 102, 102));
         nameJTextField.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         nameJTextField.setBorder(null);
-        jPanel2.add(nameJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 320, 220, 30));
+        nameJTextField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                nameJTextFieldActionPerformed(evt);
+            }
+        });
+        jPanel2.add(nameJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 320, 300, 30));
 
+        organizationJComboBox.setBackground(new java.awt.Color(0, 102, 102));
         organizationJComboBox.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
+        organizationJComboBox.setForeground(new java.awt.Color(255, 255, 255));
         organizationJComboBox.addItemListener(new java.awt.event.ItemListener() {
             public void itemStateChanged(java.awt.event.ItemEvent evt) {
                 organizationJComboBoxItemStateChanged(evt);
@@ -268,21 +276,26 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
                 organizationJComboBoxActionPerformed(evt);
             }
         });
-        jPanel2.add(organizationJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 120, 210, 30));
+        jPanel2.add(organizationJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 120, 300, 30));
 
+        organizationEmpJComboBox.setBackground(new java.awt.Color(0, 102, 102));
         organizationEmpJComboBox.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
-        jPanel2.add(organizationEmpJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 222, 210, 30));
+        organizationEmpJComboBox.setForeground(new java.awt.Color(255, 255, 255));
+        jPanel2.add(organizationEmpJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 222, 300, 30));
 
-        jLabel9.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Times New Roman", 1, 20)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(204, 255, 204));
         jLabel9.setText("Name of Organization");
         jPanel2.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 180, 220, 26));
 
         nameSeparator1.setForeground(new java.awt.Color(0, 0, 0));
         jPanel2.add(nameSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 358, 300, -1));
 
-        nameSeparator3.setForeground(new java.awt.Color(0, 0, 0));
+        nameSeparator3.setForeground(new java.awt.Color(255, 255, 255));
         jPanel2.add(nameSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 260, 300, 10));
 
+        btnCreateEmp.setBackground(new java.awt.Color(0, 153, 153));
+        btnCreateEmp.setForeground(new java.awt.Color(255, 255, 255));
         btnCreateEmp.setText("Create Employee");
         btnCreateEmp.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -291,15 +304,21 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
         });
         jPanel2.add(btnCreateEmp, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 390, -1, -1));
 
-        add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, 370, 450));
+        add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 160, 370, 450));
 
-        nameSeparator4.setForeground(new java.awt.Color(0, 0, 0));
-        add(nameSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 210, 200, 10));
+        nameSeparator4.setForeground(new java.awt.Color(255, 255, 255));
+        add(nameSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 220, 200, 10));
 
         enterpriseNameTextField1.setEditable(false);
+        enterpriseNameTextField1.setBackground(new java.awt.Color(0, 153, 153));
         enterpriseNameTextField1.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         enterpriseNameTextField1.setBorder(null);
-        add(enterpriseNameTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 180, 190, 30));
+        enterpriseNameTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                enterpriseNameTextField1ActionPerformed(evt);
+            }
+        });
+        add(enterpriseNameTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 180, 200, 30));
     }// </editor-fold>//GEN-END:initComponents
 
     private void organizationJComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_organizationJComboBoxActionPerformed
@@ -404,6 +423,14 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
         dB4OUtil.storeSystem(system);
         }
     }//GEN-LAST:event_btnCreateEmpActionPerformed
+
+    private void nameJTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nameJTextFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_nameJTextFieldActionPerformed
+
+    private void enterpriseNameTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_enterpriseNameTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_enterpriseNameTextField1ActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnCreateEmp;

@@ -75,20 +75,33 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
     private void initComponents() {
 
         Header = new javax.swing.JPanel();
+        BtnManageAuthentication = new javax.swing.JLabel();
         BtnManageNetwork = new javax.swing.JLabel();
         BtnManageEnterprise = new javax.swing.JLabel();
-        BtnManageAuthentication = new javax.swing.JLabel();
         panelSysadminWorkContainer = new javax.swing.JPanel();
 
         setPreferredSize(new java.awt.Dimension(1150, 720));
         setLayout(new java.awt.BorderLayout());
 
-        Header.setBackground(new java.awt.Color(15, 29, 52));
+        Header.setBackground(new java.awt.Color(0, 102, 102));
         Header.setPreferredSize(new java.awt.Dimension(800, 50));
         Header.setLayout(new java.awt.GridLayout(1, 0));
 
+        BtnManageAuthentication.setBackground(new java.awt.Color(204, 255, 204));
+        BtnManageAuthentication.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        BtnManageAuthentication.setForeground(new java.awt.Color(204, 255, 204));
+        BtnManageAuthentication.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        BtnManageAuthentication.setText("Manage Accounts");
+        BtnManageAuthentication.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        BtnManageAuthentication.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                BtnManageAuthenticationMouseClicked(evt);
+            }
+        });
+        Header.add(BtnManageAuthentication);
+
         BtnManageNetwork.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        BtnManageNetwork.setForeground(new java.awt.Color(255, 255, 255));
+        BtnManageNetwork.setForeground(new java.awt.Color(204, 255, 204));
         BtnManageNetwork.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         BtnManageNetwork.setText("Manage Network");
         BtnManageNetwork.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -100,7 +113,7 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         Header.add(BtnManageNetwork);
 
         BtnManageEnterprise.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        BtnManageEnterprise.setForeground(new java.awt.Color(255, 255, 255));
+        BtnManageEnterprise.setForeground(new java.awt.Color(204, 255, 204));
         BtnManageEnterprise.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         BtnManageEnterprise.setText("Manage Enterprise");
         BtnManageEnterprise.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -111,21 +124,9 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         });
         Header.add(BtnManageEnterprise);
 
-        BtnManageAuthentication.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        BtnManageAuthentication.setForeground(new java.awt.Color(255, 255, 255));
-        BtnManageAuthentication.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        BtnManageAuthentication.setText("Manage Accounts");
-        BtnManageAuthentication.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        BtnManageAuthentication.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                BtnManageAuthenticationMouseClicked(evt);
-            }
-        });
-        Header.add(BtnManageAuthentication);
-
         add(Header, java.awt.BorderLayout.PAGE_START);
 
-        panelSysadminWorkContainer.setBackground(new java.awt.Color(255, 153, 153));
+        panelSysadminWorkContainer.setBackground(new java.awt.Color(0, 153, 153));
         panelSysadminWorkContainer.setLayout(new java.awt.CardLayout());
         add(panelSysadminWorkContainer, java.awt.BorderLayout.CENTER);
     }// </editor-fold>//GEN-END:initComponents

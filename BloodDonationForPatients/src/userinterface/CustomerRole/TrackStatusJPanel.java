@@ -42,11 +42,13 @@ public class TrackStatusJPanel extends javax.swing.JPanel {
         btnBack = new javax.swing.JButton();
         btnTrackRequests = new javax.swing.JButton();
         btnTrackApplications = new javax.swing.JButton();
-        logo = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(255, 153, 153));
+        setBackground(new java.awt.Color(0, 153, 153));
         setPreferredSize(new java.awt.Dimension(1280, 720));
 
+        btnBack.setBackground(new java.awt.Color(0, 102, 102));
+        btnBack.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        btnBack.setForeground(new java.awt.Color(204, 255, 204));
         btnBack.setText("<< Back");
         btnBack.setBorder(new javax.swing.border.MatteBorder(null));
         btnBack.addActionListener(new java.awt.event.ActionListener() {
@@ -55,6 +57,9 @@ public class TrackStatusJPanel extends javax.swing.JPanel {
             }
         });
 
+        btnTrackRequests.setBackground(new java.awt.Color(0, 102, 102));
+        btnTrackRequests.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        btnTrackRequests.setForeground(new java.awt.Color(204, 255, 204));
         btnTrackRequests.setText("Track Blood Requests");
         btnTrackRequests.setBorder(new javax.swing.border.MatteBorder(null));
         btnTrackRequests.addActionListener(new java.awt.event.ActionListener() {
@@ -63,6 +68,9 @@ public class TrackStatusJPanel extends javax.swing.JPanel {
             }
         });
 
+        btnTrackApplications.setBackground(new java.awt.Color(0, 102, 102));
+        btnTrackApplications.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        btnTrackApplications.setForeground(new java.awt.Color(204, 255, 204));
         btnTrackApplications.setText("Track Donor Applications");
         btnTrackApplications.setBorder(new javax.swing.border.MatteBorder(null));
         btnTrackApplications.addActionListener(new java.awt.event.ActionListener() {
@@ -71,34 +79,31 @@ public class TrackStatusJPanel extends javax.swing.JPanel {
             }
         });
 
-        logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/world-cord-logo.png"))); // NOI18N
-        logo.setPreferredSize(new java.awt.Dimension(65, 65));
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(21, 21, 21)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(logo, javax.swing.GroupLayout.PREFERRED_SIZE, 588, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnTrackApplications, javax.swing.GroupLayout.PREFERRED_SIZE, 336, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnTrackRequests, javax.swing.GroupLayout.PREFERRED_SIZE, 336, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnBack, javax.swing.GroupLayout.PREFERRED_SIZE, 337, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(671, Short.MAX_VALUE))
+                .addGap(38, 38, 38)
+                .addComponent(btnBack, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(1129, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnTrackApplications, javax.swing.GroupLayout.PREFERRED_SIZE, 336, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(72, 72, 72)
+                .addComponent(btnTrackRequests, javax.swing.GroupLayout.PREFERRED_SIZE, 336, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(314, 314, 314))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(22, 22, 22)
-                .addComponent(logo, javax.swing.GroupLayout.PREFERRED_SIZE, 281, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(33, 33, 33)
+                .addGap(49, 49, 49)
                 .addComponent(btnBack, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btnTrackRequests, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btnTrackApplications, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(270, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 304, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnTrackRequests, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnTrackApplications, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(282, 282, 282))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -128,6 +133,5 @@ public class TrackStatusJPanel extends javax.swing.JPanel {
     private javax.swing.JButton btnBack;
     private javax.swing.JButton btnTrackApplications;
     private javax.swing.JButton btnTrackRequests;
-    private javax.swing.JLabel logo;
     // End of variables declaration//GEN-END:variables
 }

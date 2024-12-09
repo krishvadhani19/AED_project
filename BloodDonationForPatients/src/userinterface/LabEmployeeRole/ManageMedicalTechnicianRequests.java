@@ -137,11 +137,12 @@ public class ManageMedicalTechnicianRequests extends javax.swing.JPanel {
         jSeparator1 = new javax.swing.JSeparator();
         txtHLAList = new javax.swing.JTextField();
 
-        setBackground(new java.awt.Color(255, 153, 153));
+        setBackground(new java.awt.Color(0, 153, 153));
+        setForeground(new java.awt.Color(204, 255, 204));
         setPreferredSize(new java.awt.Dimension(1150, 720));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        tblOrganisationDonors.setBackground(new java.awt.Color(0, 0, 0));
+        tblOrganisationDonors.setBackground(new java.awt.Color(0, 102, 102));
         tblOrganisationDonors.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         tblOrganisationDonors.setForeground(new java.awt.Color(255, 255, 255));
         tblOrganisationDonors.setModel(new javax.swing.table.DefaultTableModel(
@@ -167,11 +168,14 @@ public class ManageMedicalTechnicianRequests extends javax.swing.JPanel {
         add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 130, 1120, 140));
 
         jLabel1.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(204, 255, 204));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("List Of Voluntary Bone Marrow Donors");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 90, 511, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 80, 511, -1));
 
+        btnAssignMedTech.setBackground(new java.awt.Color(0, 102, 102));
         btnAssignMedTech.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
+        btnAssignMedTech.setForeground(new java.awt.Color(204, 255, 204));
         btnAssignMedTech.setText("Assign To Me");
         btnAssignMedTech.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         btnAssignMedTech.addActionListener(new java.awt.event.ActionListener() {
@@ -181,7 +185,7 @@ public class ManageMedicalTechnicianRequests extends javax.swing.JPanel {
         });
         add(btnAssignMedTech, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 290, 160, 30));
 
-        tblMedTechDonors.setBackground(new java.awt.Color(0, 0, 0));
+        tblMedTechDonors.setBackground(new java.awt.Color(0, 102, 102));
         tblMedTechDonors.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         tblMedTechDonors.setForeground(new java.awt.Color(255, 255, 255));
         tblMedTechDonors.setModel(new javax.swing.table.DefaultTableModel(
@@ -225,10 +229,12 @@ public class ManageMedicalTechnicianRequests extends javax.swing.JPanel {
         add(buttonAddMarrow, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 610, 210, 40));
 
         jLabel3.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(204, 255, 204));
         jLabel3.setText("Blood Pressure Check");
         add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 560, -1, -1));
 
         jLabel4.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(204, 255, 204));
         jLabel4.setText("Pulse Check");
         add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 560, -1, 20));
 
@@ -246,10 +252,12 @@ public class ManageMedicalTechnicianRequests extends javax.swing.JPanel {
         add(buttonMarrowDonated, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 610, 300, 40));
 
         jLabel5.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(204, 255, 204));
         jLabel5.setText("Health check");
         add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 560, -1, 20));
 
         jLabel6.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(204, 255, 204));
         jLabel6.setText("Tests on Marrow for other infections");
         add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 560, 360, -1));
 
@@ -293,11 +301,11 @@ public class ManageMedicalTechnicianRequests extends javax.swing.JPanel {
         });
         add(checkTest, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 560, 30, 30));
 
-        jPanel3.setBackground(new java.awt.Color(102, 102, 102));
+        jPanel3.setBackground(new java.awt.Color(0, 102, 102));
         jPanel3.setPreferredSize(new java.awt.Dimension(926, 70));
 
         jLabel25.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jLabel25.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel25.setForeground(new java.awt.Color(204, 255, 204));
         jLabel25.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel25.setText("Manage Donor Request - Medical Technician");
 
@@ -306,21 +314,22 @@ public class ManageMedicalTechnicianRequests extends javax.swing.JPanel {
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(69, 69, 69)
+                .addGap(65, 65, 65)
                 .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 974, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(617, Short.MAX_VALUE))
+                .addContainerGap(621, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel25, javax.swing.GroupLayout.DEFAULT_SIZE, 44, Short.MAX_VALUE)
-                .addContainerGap())
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                .addGap(0, 12, Short.MAX_VALUE)
+                .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1660, -1));
 
+        buttonProcessRequest.setBackground(new java.awt.Color(0, 102, 102));
         buttonProcessRequest.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
+        buttonProcessRequest.setForeground(new java.awt.Color(204, 255, 204));
         buttonProcessRequest.setText("Process the request");
         buttonProcessRequest.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         buttonProcessRequest.addActionListener(new java.awt.event.ActionListener() {
@@ -330,14 +339,16 @@ public class ManageMedicalTechnicianRequests extends javax.swing.JPanel {
         });
         add(buttonProcessRequest, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 470, 210, 40));
 
+        textRequest.setBackground(new java.awt.Color(0, 153, 153));
         textRequest.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
-        textRequest.setBorder(null);
+        textRequest.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         textRequest.setEnabled(false);
         add(textRequest, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 490, 170, 30));
 
         jLabel2.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(204, 255, 204));
         jLabel2.setText("HLA List");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 470, -1, 30));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 490, -1, 30));
 
         checkBoneMarrow.setBackground(new java.awt.Color(0, 0, 0));
         checkBoneMarrow.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
@@ -351,18 +362,21 @@ public class ManageMedicalTechnicianRequests extends javax.swing.JPanel {
         add(checkBoneMarrow, new org.netbeans.lib.awtextra.AbsoluteConstraints(1080, 560, 20, 20));
 
         jLabel9.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(204, 255, 204));
         jLabel9.setText("Request Number:");
         add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 490, -1, 30));
         add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(668, 80, 120, 100));
         add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 540, 1240, 10));
 
+        txtHLAList.setBackground(new java.awt.Color(0, 153, 153));
         txtHLAList.setText(" ");
+        txtHLAList.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         txtHLAList.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtHLAListActionPerformed(evt);
             }
         });
-        add(txtHLAList, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 470, 310, 30));
+        add(txtHLAList, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 490, 310, 30));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnAssignMedTechActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAssignMedTechActionPerformed

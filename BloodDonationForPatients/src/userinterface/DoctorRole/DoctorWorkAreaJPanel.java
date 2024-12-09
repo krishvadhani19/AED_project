@@ -97,10 +97,11 @@ public class DoctorWorkAreaJPanel extends javax.swing.JPanel {
         Header.setPreferredSize(new java.awt.Dimension(800, 50));
         Header.setLayout(new java.awt.GridLayout(1, 0));
 
-        jPanel8.setBackground(new java.awt.Color(31, 31, 31));
+        jPanel8.setBackground(new java.awt.Color(0, 102, 102));
 
+        jLabel4.setBackground(new java.awt.Color(204, 255, 204));
         jLabel4.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setForeground(new java.awt.Color(204, 255, 204));
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setText("Profile");
         jLabel4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -133,10 +134,10 @@ public class DoctorWorkAreaJPanel extends javax.swing.JPanel {
 
         Header.add(jPanel8);
 
-        jPanel9.setBackground(new java.awt.Color(31, 31, 31));
+        jPanel9.setBackground(new java.awt.Color(0, 102, 102));
 
         jLabel5.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel5.setForeground(new java.awt.Color(204, 255, 204));
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel5.setText("Manage Requests");
         jLabel5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -171,7 +172,7 @@ public class DoctorWorkAreaJPanel extends javax.swing.JPanel {
 
         add(Header, java.awt.BorderLayout.PAGE_START);
 
-        userProcessContainer.setBackground(new java.awt.Color(255, 153, 153));
+        userProcessContainer.setBackground(new java.awt.Color(0, 153, 153));
         userProcessContainer.setLayout(new java.awt.CardLayout());
         add(userProcessContainer, java.awt.BorderLayout.CENTER);
     }// </editor-fold>//GEN-END:initComponents

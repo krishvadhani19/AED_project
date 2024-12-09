@@ -185,7 +185,8 @@ public class BloodRequestJPanel extends javax.swing.JPanel {
         jLabel22 = new javax.swing.JLabel();
         txtVolumeInUnits = new javax.swing.JFormattedTextField();
 
-        setBackground(new java.awt.Color(255, 153, 153));
+        setBackground(new java.awt.Color(0, 153, 153));
+        setForeground(new java.awt.Color(204, 255, 204));
         setMinimumSize(new java.awt.Dimension(1350, 718));
         setPreferredSize(new java.awt.Dimension(1350, 718));
         addMouseListener(new java.awt.event.MouseAdapter() {
@@ -196,14 +197,18 @@ public class BloodRequestJPanel extends javax.swing.JPanel {
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel12.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(204, 255, 204));
         jLabel12.setText("Street address:");
         add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 450, -1, -1));
 
         jLabel13.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
+        jLabel13.setForeground(new java.awt.Color(204, 255, 204));
         jLabel13.setText("State:");
         add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 530, -1, -1));
 
+        jButton1.setBackground(new java.awt.Color(0, 102, 102));
         jButton1.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(204, 255, 204));
         jButton1.setText("Submit");
         jButton1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -215,34 +220,43 @@ public class BloodRequestJPanel extends javax.swing.JPanel {
 
         jLabel3.setBackground(new java.awt.Color(0, 0, 0));
         jLabel3.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(204, 255, 204));
         jLabel3.setText("Name:");
         add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 100, -1, -1));
 
+        cityText.setBackground(new java.awt.Color(0, 153, 153));
         cityText.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         add(cityText, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 530, 210, -1));
 
+        nameText.setBackground(new java.awt.Color(0, 153, 153));
         nameText.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         add(nameText, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 100, 180, -1));
 
         jLabel14.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
+        jLabel14.setForeground(new java.awt.Color(204, 255, 204));
         jLabel14.setText("Country:");
         add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 490, -1, -1));
 
         jLabel15.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
+        jLabel15.setForeground(new java.awt.Color(204, 255, 204));
         jLabel15.setText("ZipCode:");
         add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 570, -1, -1));
 
+        zipText.setBackground(new java.awt.Color(0, 153, 153));
         zipText.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         add(zipText, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 570, 210, -1));
 
         jLabel16.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
+        jLabel16.setForeground(new java.awt.Color(204, 255, 204));
         jLabel16.setText("Phone:");
         add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 200, -1, -1));
 
         jLabel6.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(204, 255, 204));
         jLabel6.setText("DOB:");
         add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 150, -1, -1));
 
+        contactText.setBackground(new java.awt.Color(0, 153, 153));
         contactText.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         contactText.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -252,9 +266,11 @@ public class BloodRequestJPanel extends javax.swing.JPanel {
         add(contactText, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 200, 170, -1));
 
         jLabel17.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
+        jLabel17.setForeground(new java.awt.Color(204, 255, 204));
         jLabel17.setText("Email:");
         add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 200, -1, -1));
 
+        emailText.setBackground(new java.awt.Color(0, 153, 153));
         emailText.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         emailText.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -263,6 +279,7 @@ public class BloodRequestJPanel extends javax.swing.JPanel {
         });
         add(emailText, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 200, 176, -1));
 
+        ageText.setBackground(new java.awt.Color(0, 153, 153));
         ageText.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         ageText.setForeground(new java.awt.Color(255, 255, 255));
         ageText.setEnabled(false);
@@ -274,17 +291,21 @@ public class BloodRequestJPanel extends javax.swing.JPanel {
         add(ageText, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 150, 170, -1));
 
         jLabel8.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(204, 255, 204));
         jLabel8.setText("Gender:");
         add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 250, -1, -1));
 
         jLabel19.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jLabel19.setForeground(new java.awt.Color(204, 255, 204));
         jLabel19.setText("If yes, Please explain:     ");
         add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 540, -1, 30));
 
         jLabel9.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(204, 255, 204));
         jLabel9.setText("Volume In Units:");
         add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 100, -1, -1));
 
+        streetText.setBackground(new java.awt.Color(0, 153, 153));
         streetText.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         add(streetText, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 450, 210, -1));
 
@@ -292,10 +313,12 @@ public class BloodRequestJPanel extends javax.swing.JPanel {
         add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 560, -1, -1));
 
         buttonYes.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
+        buttonYes.setForeground(new java.awt.Color(204, 255, 204));
         buttonYes.setText("Yes");
         add(buttonYes, new org.netbeans.lib.awtextra.AbsoluteConstraints(1150, 510, -1, -1));
 
         buttonNo.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
+        buttonNo.setForeground(new java.awt.Color(204, 255, 204));
         buttonNo.setText("No");
         add(buttonNo, new org.netbeans.lib.awtextra.AbsoluteConstraints(1220, 510, -1, -1));
 
@@ -303,11 +326,11 @@ public class BloodRequestJPanel extends javax.swing.JPanel {
         dobDateField.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         add(dobDateField, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 150, 180, -1));
 
-        titlePanel.setBackground(new java.awt.Color(153, 153, 153));
+        titlePanel.setBackground(new java.awt.Color(0, 102, 102));
         titlePanel.setPreferredSize(new java.awt.Dimension(926, 70));
 
         jLabel25.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jLabel25.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel25.setForeground(new java.awt.Color(204, 255, 204));
         jLabel25.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel25.setText("Blood Request Form ");
 
@@ -316,21 +339,21 @@ public class BloodRequestJPanel extends javax.swing.JPanel {
         titlePanelLayout.setHorizontalGroup(
             titlePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(titlePanelLayout.createSequentialGroup()
-                .addContainerGap()
                 .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 1273, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(521, Short.MAX_VALUE))
+                .addGap(0, 527, Short.MAX_VALUE))
         );
         titlePanelLayout.setVerticalGroup(
             titlePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, titlePanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel25, javax.swing.GroupLayout.DEFAULT_SIZE, 58, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         add(titlePanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1800, -1));
 
         jLabel20.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
+        jLabel20.setForeground(new java.awt.Color(204, 255, 204));
         jLabel20.setText("Age:");
         add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 150, -1, -1));
 
@@ -352,7 +375,9 @@ public class BloodRequestJPanel extends javax.swing.JPanel {
         });
         add(genderJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 250, 180, -1));
 
+        jButton2.setBackground(new java.awt.Color(0, 102, 102));
         jButton2.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(204, 255, 204));
         jButton2.setText("Cancel");
         jButton2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -363,7 +388,9 @@ public class BloodRequestJPanel extends javax.swing.JPanel {
         add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1120, 650, 110, 40));
         add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 380, 980, 10));
 
+        jLabel1.setBackground(new java.awt.Color(0, 153, 153));
         jLabel1.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(204, 255, 204));
         jLabel1.setText("Patient Status");
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 400, 150, -1));
 
@@ -371,9 +398,11 @@ public class BloodRequestJPanel extends javax.swing.JPanel {
         add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 380, 150, 250));
 
         jLabel4.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(204, 255, 204));
         jLabel4.setText("Address Details");
         add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 400, 190, -1));
 
+        hlaTypesText.setBackground(new java.awt.Color(0, 153, 153));
         hlaTypesText.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         hlaTypesText.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -383,13 +412,16 @@ public class BloodRequestJPanel extends javax.swing.JPanel {
         add(hlaTypesText, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 570, 570, -1));
 
         jLabel21.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jLabel21.setForeground(new java.awt.Color(204, 255, 204));
         jLabel21.setText("Have you ever experienced any complications after recieving blood? ");
         add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 510, -1, 30));
 
+        uidText.setBackground(new java.awt.Color(0, 153, 153));
         uidText.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         add(uidText, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 100, 170, -1));
 
         jLabel7.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(204, 255, 204));
         jLabel7.setText("PIN:");
         add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 100, -1, -1));
 
@@ -402,18 +434,22 @@ public class BloodRequestJPanel extends javax.swing.JPanel {
         add(bloodTypeComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 250, 170, 40));
 
         jLabel11.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(204, 255, 204));
         jLabel11.setText("Blood Group:");
         add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 250, -1, -1));
 
         buttonNo1.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
+        buttonNo1.setForeground(new java.awt.Color(204, 255, 204));
         buttonNo1.setText("No");
         add(buttonNo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1050, 470, -1, -1));
 
         buttonYes1.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
+        buttonYes1.setForeground(new java.awt.Color(204, 255, 204));
         buttonYes1.setText("Yes");
         add(buttonYes1, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 470, -1, -1));
 
         jLabel22.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jLabel22.setForeground(new java.awt.Color(204, 255, 204));
         jLabel22.setText("Did your doctor prescribe a blood transfusion?");
         add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 470, -1, 30));
 

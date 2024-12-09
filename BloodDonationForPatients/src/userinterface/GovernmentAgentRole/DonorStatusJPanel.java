@@ -98,10 +98,11 @@ public class DonorStatusJPanel extends javax.swing.JPanel {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(255, 153, 153));
+        setBackground(new java.awt.Color(0, 153, 153));
+        setForeground(new java.awt.Color(204, 255, 204));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        donorRequestTable.setBackground(new java.awt.Color(0, 0, 0));
+        donorRequestTable.setBackground(new java.awt.Color(0, 102, 102));
         donorRequestTable.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         donorRequestTable.setForeground(new java.awt.Color(255, 255, 255));
         donorRequestTable.setModel(new javax.swing.table.DefaultTableModel(
@@ -116,13 +117,13 @@ public class DonorStatusJPanel extends javax.swing.JPanel {
         donorRequestTable.setRowHeight(30);
         jScrollPane1.setViewportView(donorRequestTable);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 430, 1030, 160));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 450, 1030, 160));
 
-        jPanel3.setBackground(new java.awt.Color(255, 153, 153));
+        jPanel3.setBackground(new java.awt.Color(0, 102, 102));
         jPanel3.setPreferredSize(new java.awt.Dimension(926, 70));
 
         jLabel25.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jLabel25.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel25.setForeground(new java.awt.Color(204, 255, 204));
         jLabel25.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel25.setText("Manage Donors");
 
@@ -132,20 +133,21 @@ public class DonorStatusJPanel extends javax.swing.JPanel {
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel25, javax.swing.GroupLayout.DEFAULT_SIZE, 1696, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 1603, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(111, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel25, javax.swing.GroupLayout.DEFAULT_SIZE, 44, Short.MAX_VALUE)
-                .addContainerGap())
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                .addGap(0, 12, Short.MAX_VALUE)
+                .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(-6, 0, 1720, -1));
 
+        jButton1.setBackground(new java.awt.Color(0, 102, 102));
         jButton1.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(204, 255, 204));
         jButton1.setText("Delete");
         jButton1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -153,9 +155,9 @@ public class DonorStatusJPanel extends javax.swing.JPanel {
                 jButton1ActionPerformed(evt);
             }
         });
-        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 320, 117, 39));
+        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 340, 117, 39));
 
-        donorTable.setBackground(new java.awt.Color(0, 0, 0));
+        donorTable.setBackground(new java.awt.Color(0, 102, 102));
         donorTable.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         donorTable.setForeground(new java.awt.Color(255, 255, 255));
         donorTable.setModel(new javax.swing.table.DefaultTableModel(
@@ -170,17 +172,19 @@ public class DonorStatusJPanel extends javax.swing.JPanel {
         donorTable.setRowHeight(30);
         jScrollPane2.setViewportView(donorTable);
 
-        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 140, 1030, 160));
+        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 160, 1030, 160));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 22)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(204, 255, 204));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("List of Donor Requests");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 390, 510, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 410, 510, -1));
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 22)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(204, 255, 204));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("List of Donors");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 110, 510, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 130, 510, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed

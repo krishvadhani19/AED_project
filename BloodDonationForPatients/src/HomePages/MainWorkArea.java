@@ -55,7 +55,7 @@ public class MainWorkArea extends javax.swing.JPanel {
         splitPane.setDividerSize(3);
         splitPane.setOrientation(javax.swing.JSplitPane.VERTICAL_SPLIT);
 
-        actionBar.setBackground(new java.awt.Color(255, 153, 153));
+        actionBar.setBackground(new java.awt.Color(0, 102, 102));
 
         btnLogOut.setText("Logout");
         btnLogOut.addActionListener(new java.awt.event.ActionListener() {

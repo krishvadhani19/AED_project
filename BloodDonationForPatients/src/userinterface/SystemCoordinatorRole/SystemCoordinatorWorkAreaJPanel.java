@@ -95,12 +95,12 @@ public class SystemCoordinatorWorkAreaJPanel extends javax.swing.JPanel {
         setPreferredSize(new java.awt.Dimension(1150, 720));
         setLayout(new java.awt.BorderLayout());
 
-        Header.setBackground(new java.awt.Color(15, 29, 52));
+        Header.setBackground(new java.awt.Color(0, 102, 102));
         Header.setPreferredSize(new java.awt.Dimension(1150, 70));
         Header.setLayout(new java.awt.GridLayout(1, 0));
 
         BtnDonorList.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        BtnDonorList.setForeground(new java.awt.Color(255, 255, 255));
+        BtnDonorList.setForeground(new java.awt.Color(204, 255, 204));
         BtnDonorList.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         BtnDonorList.setText("Donors List");
         BtnDonorList.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -113,7 +113,7 @@ public class SystemCoordinatorWorkAreaJPanel extends javax.swing.JPanel {
 
         add(Header, java.awt.BorderLayout.PAGE_START);
 
-        userProcessContainer.setBackground(new java.awt.Color(255, 153, 153));
+        userProcessContainer.setBackground(new java.awt.Color(0, 153, 153));
         userProcessContainer.setPreferredSize(new java.awt.Dimension(1400, 720));
         userProcessContainer.setLayout(new java.awt.CardLayout());
         add(userProcessContainer, java.awt.BorderLayout.CENTER);

@@ -82,12 +82,13 @@ public class DonorApplicationListJPanel extends javax.swing.JPanel {
         cmbStatusChange = new javax.swing.JComboBox<>();
         btnStatusChange = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(255, 153, 153));
+        setBackground(new java.awt.Color(0, 153, 153));
+        setForeground(new java.awt.Color(204, 255, 204));
         setMinimumSize(new java.awt.Dimension(1100, 720));
         setPreferredSize(new java.awt.Dimension(1150, 720));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        tblDonorApplications.setBackground(new java.awt.Color(0, 0, 0));
+        tblDonorApplications.setBackground(new java.awt.Color(0, 102, 102));
         tblDonorApplications.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         tblDonorApplications.setForeground(new java.awt.Color(255, 255, 255));
         tblDonorApplications.setModel(new javax.swing.table.DefaultTableModel(
@@ -112,8 +113,9 @@ public class DonorApplicationListJPanel extends javax.swing.JPanel {
 
         add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 110, 1150, 410));
 
-        btnPrepareOrder.setBackground(new java.awt.Color(204, 204, 204));
+        btnPrepareOrder.setBackground(new java.awt.Color(0, 102, 102));
         btnPrepareOrder.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
+        btnPrepareOrder.setForeground(new java.awt.Color(204, 255, 204));
         btnPrepareOrder.setText("View Details");
         btnPrepareOrder.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnPrepareOrder.addActionListener(new java.awt.event.ActionListener() {
@@ -123,11 +125,12 @@ public class DonorApplicationListJPanel extends javax.swing.JPanel {
         });
         add(btnPrepareOrder, new org.netbeans.lib.awtextra.AbsoluteConstraints(1050, 540, 170, 40));
 
-        titlePanel.setBackground(new java.awt.Color(153, 153, 153));
+        titlePanel.setBackground(new java.awt.Color(0, 102, 102));
         titlePanel.setPreferredSize(new java.awt.Dimension(926, 70));
 
-        jLabel26.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jLabel26.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel26.setBackground(new java.awt.Color(0, 102, 102));
+        jLabel26.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        jLabel26.setForeground(new java.awt.Color(204, 255, 204));
         jLabel26.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel26.setText("Donor Application List");
 
@@ -142,17 +145,21 @@ public class DonorApplicationListJPanel extends javax.swing.JPanel {
         );
         titlePanelLayout.setVerticalGroup(
             titlePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, titlePanelLayout.createSequentialGroup()
+            .addGroup(titlePanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel26, javax.swing.GroupLayout.DEFAULT_SIZE, 58, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(jLabel26, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         add(titlePanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1800, -1));
 
+        cmbStatusChange.setBackground(new java.awt.Color(0, 102, 102));
+        cmbStatusChange.setForeground(new java.awt.Color(204, 255, 204));
         cmbStatusChange.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         add(cmbStatusChange, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 540, 160, 30));
 
+        btnStatusChange.setBackground(new java.awt.Color(0, 102, 102));
+        btnStatusChange.setForeground(new java.awt.Color(204, 255, 204));
         btnStatusChange.setText("Change Status");
         btnStatusChange.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

@@ -91,10 +91,12 @@ public class ManageLegalOfficerRequestJPanel extends javax.swing.JPanel {
         jLabel25 = new javax.swing.JLabel();
         btnAssign1 = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(255, 153, 153));
+        setBackground(new java.awt.Color(0, 153, 153));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        btnAssign.setBackground(new java.awt.Color(0, 102, 102));
         btnAssign.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
+        btnAssign.setForeground(new java.awt.Color(204, 255, 204));
         btnAssign.setText("Back");
         btnAssign.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnAssign.addActionListener(new java.awt.event.ActionListener() {
@@ -104,7 +106,7 @@ public class ManageLegalOfficerRequestJPanel extends javax.swing.JPanel {
         });
         add(btnAssign, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 310, 140, 40));
 
-        tblLegalOrganisation.setBackground(new java.awt.Color(0, 0, 0));
+        tblLegalOrganisation.setBackground(new java.awt.Color(0, 102, 102));
         tblLegalOrganisation.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         tblLegalOrganisation.setForeground(new java.awt.Color(255, 255, 255));
         tblLegalOrganisation.setModel(new javax.swing.table.DefaultTableModel(
@@ -128,11 +130,11 @@ public class ManageLegalOfficerRequestJPanel extends javax.swing.JPanel {
 
         add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 90, 990, 190));
 
-        jPanel3.setBackground(new java.awt.Color(102, 102, 102));
+        jPanel3.setBackground(new java.awt.Color(0, 102, 102));
         jPanel3.setPreferredSize(new java.awt.Dimension(926, 70));
 
         jLabel25.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jLabel25.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel25.setForeground(new java.awt.Color(204, 255, 204));
         jLabel25.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel25.setText("Requests To Ship");
 
@@ -141,21 +143,21 @@ public class ManageLegalOfficerRequestJPanel extends javax.swing.JPanel {
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel25, javax.swing.GroupLayout.DEFAULT_SIZE, 1556, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 1568, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 12, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel25, javax.swing.GroupLayout.DEFAULT_SIZE, 44, Short.MAX_VALUE)
-                .addContainerGap())
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                .addGap(0, 12, Short.MAX_VALUE)
+                .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1580, -1));
 
+        btnAssign1.setBackground(new java.awt.Color(0, 102, 102));
         btnAssign1.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
+        btnAssign1.setForeground(new java.awt.Color(204, 255, 204));
         btnAssign1.setText("OK");
         btnAssign1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnAssign1.addActionListener(new java.awt.event.ActionListener() {

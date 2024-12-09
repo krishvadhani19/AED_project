@@ -181,10 +181,11 @@ public class CreateDonorJPanel extends javax.swing.JPanel {
         uidTextField = new javax.swing.JTextField();
         hlaTypeTextField = new javax.swing.JTextField();
 
-        setBackground(new java.awt.Color(255, 153, 153));
+        setBackground(new java.awt.Color(0, 153, 153));
+        setForeground(new java.awt.Color(204, 255, 204));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        tblGoogleSheet.setBackground(new java.awt.Color(0, 0, 0));
+        tblGoogleSheet.setBackground(new java.awt.Color(0, 102, 102));
         tblGoogleSheet.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         tblGoogleSheet.setForeground(new java.awt.Color(255, 255, 255));
         tblGoogleSheet.setModel(new javax.swing.table.DefaultTableModel(
@@ -216,29 +217,36 @@ public class CreateDonorJPanel extends javax.swing.JPanel {
         add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 150, 1200, 210));
 
         jLabel1.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(204, 255, 204));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Donor Requests");
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 100, 760, -1));
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(204, 255, 204));
         jLabel2.setText("Name");
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 450, 70, 30));
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(204, 255, 204));
         jLabel3.setText("Contact");
         add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 500, -1, 30));
 
+        nameTextField.setBackground(new java.awt.Color(0, 153, 153));
         nameTextField.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
+        nameTextField.setForeground(new java.awt.Color(204, 255, 204));
         nameTextField.setEnabled(false);
         add(nameTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 450, 212, -1));
 
+        contactTextField.setBackground(new java.awt.Color(0, 153, 153));
         contactTextField.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
+        contactTextField.setForeground(new java.awt.Color(204, 255, 204));
         contactTextField.setEnabled(false);
         add(contactTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 500, 212, -1));
 
-        buttonCreate.setBackground(new java.awt.Color(31, 31, 31));
+        buttonCreate.setBackground(new java.awt.Color(0, 102, 102));
         buttonCreate.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
-        buttonCreate.setForeground(new java.awt.Color(255, 255, 255));
+        buttonCreate.setForeground(new java.awt.Color(204, 255, 204));
         buttonCreate.setText("Create Donor");
         buttonCreate.setBorder(new javax.swing.border.MatteBorder(null));
         buttonCreate.setEnabled(false);
@@ -250,10 +258,11 @@ public class CreateDonorJPanel extends javax.swing.JPanel {
         add(buttonCreate, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 550, 150, 40));
 
         jLabel4.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(204, 255, 204));
         jLabel4.setText("Create Donor Profile");
         add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 390, -1, -1));
 
-        donorTable.setBackground(new java.awt.Color(0, 0, 0));
+        donorTable.setBackground(new java.awt.Color(0, 102, 102));
         donorTable.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         donorTable.setForeground(new java.awt.Color(255, 255, 255));
         donorTable.setModel(new javax.swing.table.DefaultTableModel(
@@ -278,7 +287,7 @@ public class CreateDonorJPanel extends javax.swing.JPanel {
 
         add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 600, 1180, 220));
 
-        jPanel3.setBackground(new java.awt.Color(102, 102, 102));
+        jPanel3.setBackground(new java.awt.Color(0, 102, 102));
         jPanel3.setPreferredSize(new java.awt.Dimension(926, 70));
 
         jLabel25.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
@@ -292,32 +301,38 @@ public class CreateDonorJPanel extends javax.swing.JPanel {
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel25, javax.swing.GroupLayout.DEFAULT_SIZE, 1576, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 1588, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel25, javax.swing.GroupLayout.DEFAULT_SIZE, 44, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1600, -1));
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(204, 255, 204));
         jLabel5.setText("UID");
         add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 450, -1, -1));
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(204, 255, 204));
         jLabel6.setText("Blood Group");
         add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 500, -1, 30));
 
+        uidTextField.setBackground(new java.awt.Color(0, 153, 153));
         uidTextField.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
+        uidTextField.setForeground(new java.awt.Color(204, 255, 204));
         uidTextField.setEnabled(false);
         add(uidTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 450, 230, -1));
 
+        hlaTypeTextField.setBackground(new java.awt.Color(0, 153, 153));
         hlaTypeTextField.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
+        hlaTypeTextField.setForeground(new java.awt.Color(204, 255, 204));
         hlaTypeTextField.setEnabled(false);
         add(hlaTypeTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 500, 230, -1));
     }// </editor-fold>//GEN-END:initComponents

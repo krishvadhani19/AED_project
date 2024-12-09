@@ -81,12 +81,12 @@ public class TrackingDonorApplicationListJPanel extends javax.swing.JPanel {
         jLabel26 = new javax.swing.JLabel();
         btnPrepareOrder1 = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(255, 153, 153));
+        setBackground(new java.awt.Color(0, 153, 153));
         setMinimumSize(new java.awt.Dimension(1100, 720));
         setPreferredSize(new java.awt.Dimension(1150, 720));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        tblDonorApplications.setBackground(new java.awt.Color(0, 0, 0));
+        tblDonorApplications.setBackground(new java.awt.Color(0, 102, 102));
         tblDonorApplications.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         tblDonorApplications.setForeground(new java.awt.Color(255, 255, 255));
         tblDonorApplications.setModel(new javax.swing.table.DefaultTableModel(
@@ -111,8 +111,9 @@ public class TrackingDonorApplicationListJPanel extends javax.swing.JPanel {
 
         add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 110, 1150, 410));
 
-        btnPrepareOrder.setBackground(new java.awt.Color(204, 204, 204));
+        btnPrepareOrder.setBackground(new java.awt.Color(0, 102, 102));
         btnPrepareOrder.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
+        btnPrepareOrder.setForeground(new java.awt.Color(204, 255, 204));
         btnPrepareOrder.setText("View Details");
         btnPrepareOrder.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnPrepareOrder.addActionListener(new java.awt.event.ActionListener() {
@@ -122,11 +123,11 @@ public class TrackingDonorApplicationListJPanel extends javax.swing.JPanel {
         });
         add(btnPrepareOrder, new org.netbeans.lib.awtextra.AbsoluteConstraints(1050, 540, 170, 40));
 
-        titlePanel.setBackground(new java.awt.Color(153, 153, 153));
+        titlePanel.setBackground(new java.awt.Color(0, 102, 102));
         titlePanel.setPreferredSize(new java.awt.Dimension(926, 70));
 
         jLabel26.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jLabel26.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel26.setForeground(new java.awt.Color(204, 255, 204));
         jLabel26.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel26.setText("Donor Application Tracking");
 
@@ -135,22 +136,21 @@ public class TrackingDonorApplicationListJPanel extends javax.swing.JPanel {
         titlePanelLayout.setHorizontalGroup(
             titlePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(titlePanelLayout.createSequentialGroup()
-                .addContainerGap()
                 .addComponent(jLabel26, javax.swing.GroupLayout.PREFERRED_SIZE, 1273, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(521, Short.MAX_VALUE))
+                .addGap(0, 527, Short.MAX_VALUE))
         );
         titlePanelLayout.setVerticalGroup(
             titlePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, titlePanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel26, javax.swing.GroupLayout.DEFAULT_SIZE, 58, Short.MAX_VALUE)
-                .addContainerGap())
+                .addGap(0, 12, Short.MAX_VALUE)
+                .addComponent(jLabel26, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         add(titlePanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1800, -1));
 
-        btnPrepareOrder1.setBackground(new java.awt.Color(204, 204, 204));
+        btnPrepareOrder1.setBackground(new java.awt.Color(0, 102, 102));
         btnPrepareOrder1.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
+        btnPrepareOrder1.setForeground(new java.awt.Color(204, 255, 204));
         btnPrepareOrder1.setText("<< Back");
         btnPrepareOrder1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnPrepareOrder1.addActionListener(new java.awt.event.ActionListener() {

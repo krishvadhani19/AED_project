@@ -79,46 +79,70 @@ public class ManageGovernmentCoordinatorProfile extends javax.swing.JPanel {
         btnSave = new javax.swing.JButton();
         comboGender = new javax.swing.JComboBox();
 
-        setBackground(new java.awt.Color(255, 153, 153));
+        setBackground(new java.awt.Color(0, 102, 102));
 
-        jLabel1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(204, 255, 204));
         jLabel1.setText("Name:");
 
-        jLabel2.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(204, 255, 204));
         jLabel2.setText("Contact:");
 
-        jLabel3.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(204, 255, 204));
         jLabel3.setText("Address:");
 
-        jLabel4.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(204, 255, 204));
         jLabel4.setText("City:");
 
-        jLabel5.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(204, 255, 204));
         jLabel5.setText("State:");
 
-        jLabel6.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(204, 255, 204));
         jLabel6.setText("Gender:");
 
-        jLabel7.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(204, 255, 204));
         jLabel7.setText("DOB:");
 
-        jLabel8.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(204, 255, 204));
         jLabel8.setText("Specialization:");
 
+        txtName.setBackground(new java.awt.Color(0, 102, 102));
         txtName.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        txtName.setForeground(new java.awt.Color(204, 255, 204));
 
+        txtContact.setBackground(new java.awt.Color(0, 102, 102));
         txtContact.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        txtContact.setForeground(new java.awt.Color(204, 255, 204));
 
+        txtAddress.setBackground(new java.awt.Color(0, 102, 102));
         txtAddress.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        txtAddress.setForeground(new java.awt.Color(204, 255, 204));
 
+        txtCity.setBackground(new java.awt.Color(0, 102, 102));
         txtCity.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        txtCity.setForeground(new java.awt.Color(204, 255, 204));
 
+        txtState.setBackground(new java.awt.Color(0, 102, 102));
         txtState.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        txtState.setForeground(new java.awt.Color(204, 255, 204));
 
+        txtSpecialization.setBackground(new java.awt.Color(0, 102, 102));
         txtSpecialization.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        txtSpecialization.setForeground(new java.awt.Color(204, 255, 204));
 
+        txtDOB.setBackground(new java.awt.Color(0, 102, 102));
         txtDOB.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        txtDOB.setForeground(new java.awt.Color(204, 255, 204));
 
+        btnSave.setBackground(new java.awt.Color(0, 153, 153));
+        btnSave.setForeground(new java.awt.Color(204, 255, 204));
         btnSave.setText("Save");
         btnSave.setBorder(new javax.swing.border.MatteBorder(null));
         btnSave.addActionListener(new java.awt.event.ActionListener() {
@@ -127,7 +151,9 @@ public class ManageGovernmentCoordinatorProfile extends javax.swing.JPanel {
             }
         });
 
+        comboGender.setBackground(new java.awt.Color(0, 102, 102));
         comboGender.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        comboGender.setForeground(new java.awt.Color(204, 255, 204));
         comboGender.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Male", "Female" }));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -159,7 +185,7 @@ public class ManageGovernmentCoordinatorProfile extends javax.swing.JPanel {
                     .addComponent(txtState, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtDOB, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(comboGender, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(48, Short.MAX_VALUE))
+                .addContainerGap(62, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

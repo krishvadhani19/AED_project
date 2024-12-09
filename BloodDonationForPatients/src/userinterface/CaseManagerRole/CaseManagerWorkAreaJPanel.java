@@ -82,18 +82,19 @@ public class CaseManagerWorkAreaJPanel extends javax.swing.JPanel {
         jPanel2 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
         btnManageInventory = new javax.swing.JLabel();
-        btnReceiveRequests = new javax.swing.JLabel();
         btnPrepareOrder = new javax.swing.JLabel();
+        btnReceiveRequests = new javax.swing.JLabel();
         userProcessContainer = new javax.swing.JPanel();
 
         setPreferredSize(new java.awt.Dimension(800, 500));
         setLayout(new java.awt.BorderLayout());
 
-        Header.setBackground(new java.awt.Color(102, 102, 102));
+        Header.setBackground(new java.awt.Color(0, 102, 102));
+        Header.setForeground(new java.awt.Color(204, 255, 204));
         Header.setPreferredSize(new java.awt.Dimension(800, 50));
         Header.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel2.setBackground(new java.awt.Color(102, 102, 102));
+        jPanel2.setBackground(new java.awt.Color(0, 102, 102));
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -108,7 +109,7 @@ public class CaseManagerWorkAreaJPanel extends javax.swing.JPanel {
 
         Header.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, 90, -1));
 
-        jPanel3.setBackground(new java.awt.Color(102, 102, 102));
+        jPanel3.setBackground(new java.awt.Color(0, 102, 102));
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -123,8 +124,9 @@ public class CaseManagerWorkAreaJPanel extends javax.swing.JPanel {
 
         Header.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 0, 100, 50));
 
-        btnManageInventory.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        btnManageInventory.setForeground(new java.awt.Color(255, 255, 255));
+        btnManageInventory.setBackground(new java.awt.Color(204, 255, 204));
+        btnManageInventory.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        btnManageInventory.setForeground(new java.awt.Color(204, 255, 204));
         btnManageInventory.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         btnManageInventory.setText("Manage Inventory");
         btnManageInventory.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -134,20 +136,8 @@ public class CaseManagerWorkAreaJPanel extends javax.swing.JPanel {
         });
         Header.add(btnManageInventory, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 0, 170, 50));
 
-        btnReceiveRequests.setBackground(new java.awt.Color(31, 31, 31));
-        btnReceiveRequests.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        btnReceiveRequests.setForeground(new java.awt.Color(255, 255, 255));
-        btnReceiveRequests.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        btnReceiveRequests.setText("Prepare Donor Order");
-        btnReceiveRequests.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnReceiveRequestsMouseClicked(evt);
-            }
-        });
-        Header.add(btnReceiveRequests, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 0, -1, 50));
-
-        btnPrepareOrder.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        btnPrepareOrder.setForeground(new java.awt.Color(255, 255, 255));
+        btnPrepareOrder.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        btnPrepareOrder.setForeground(new java.awt.Color(204, 255, 204));
         btnPrepareOrder.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         btnPrepareOrder.setText("Prepare Request");
         btnPrepareOrder.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -155,11 +145,23 @@ public class CaseManagerWorkAreaJPanel extends javax.swing.JPanel {
                 btnPrepareOrderMouseClicked(evt);
             }
         });
-        Header.add(btnPrepareOrder, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 0, 180, 50));
+        Header.add(btnPrepareOrder, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 0, 180, 50));
+
+        btnReceiveRequests.setBackground(new java.awt.Color(31, 31, 31));
+        btnReceiveRequests.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        btnReceiveRequests.setForeground(new java.awt.Color(204, 255, 204));
+        btnReceiveRequests.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        btnReceiveRequests.setText("Prepare Donor Order");
+        btnReceiveRequests.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnReceiveRequestsMouseClicked(evt);
+            }
+        });
+        Header.add(btnReceiveRequests, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 0, -1, 50));
 
         add(Header, java.awt.BorderLayout.PAGE_START);
 
-        userProcessContainer.setBackground(new java.awt.Color(255, 153, 153));
+        userProcessContainer.setBackground(new java.awt.Color(0, 153, 153));
         userProcessContainer.setLayout(new java.awt.CardLayout());
         add(userProcessContainer, java.awt.BorderLayout.CENTER);
     }// </editor-fold>//GEN-END:initComponents
