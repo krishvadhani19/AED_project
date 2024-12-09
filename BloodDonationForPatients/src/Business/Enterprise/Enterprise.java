@@ -11,7 +11,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author krish19
+ * @author maka
  */
 public abstract class Enterprise extends Organization {
 
@@ -22,8 +22,42 @@ public abstract class Enterprise extends Organization {
     private String zipcode;
 
     public ArrayList<Organization.Type> supportedOrgTypes;
+    
+    public OrganizationDirectory getOrganizationDirectory() {
+        return organizationDirectory;
+    }
 
-    // Constructor to initialize enterprise with name and type
+    public enum EnterpriseType {
+        Laboratory("Laboratory"),
+        LocalClinic("LocalClinic"),
+        Logistics("Logistics"),
+        Headquarter("Headquarter"),
+        Government("Government");
+
+        private String value;
+
+        private EnterpriseType(String value) {
+            this.value = value;
+        }
+
+        public String getValue() {
+            return value;
+        }
+
+        @Override
+        public String toString() {
+            return value;
+        }
+    }
+
+    public EnterpriseType getEnterpriseType() {
+        return enterpriseType;
+    }
+
+    public void setEnterpriseType(EnterpriseType enterpriseType) {
+        this.enterpriseType = enterpriseType;
+    }
+
     public Enterprise(String name, EnterpriseType type) {
         super(name, null);
         this.enterpriseType = type;
@@ -31,32 +65,6 @@ public abstract class Enterprise extends Organization {
         organizationDirectory = new OrganizationDirectory();
     }
 
-    // Getter for Enterprise Type
-    public EnterpriseType getEnterpriseType() {
-        return enterpriseType;
-    }
-
-    // Setter for Enterprise Type
-    public void setEnterpriseType(EnterpriseType enterpriseType) {
-        this.enterpriseType = enterpriseType;
-    }
-
-    // Getter for Organization Directory
-    public OrganizationDirectory getOrganizationDirectory() {
-        return organizationDirectory;
-    }
-
-    // Method to add supported organization type
-    public void addOrganizationType(Organization.Type organizationType){
-        supportedOrgTypes.add(organizationType);
-    }
-
-    // Method to get supported organization types
-    public ArrayList<Organization.Type> getSupportedOrganizationTypes(){
-        return supportedOrgTypes;
-    }
-
-    // Getter and Setter methods for contact, email, and zipcode
     public long getContact() {
         return contact;
     }
@@ -81,27 +89,11 @@ public abstract class Enterprise extends Organization {
         this.zipcode = zipcode;
     }
 
-    // Enum for different types of enterprises
-    public enum EnterpriseType {
-        Laboratory("Laboratory"),
-        LocalClinic("LocalClinic"),
-        Logistics("Logistics"),
-        Headquarter("Headquarter"),
-        Government("Government");
-
-        private String value;
-
-        private EnterpriseType(String value) {
-            this.value = value;
-        }
-
-        public String getValue() {
-            return value;
-        }
-
-        @Override
-        public String toString() {
-            return value;
-        }
+    public void addOrganizationType(Organization.Type organizationType){
+        supportedOrgTypes.add(organizationType);
+    }
+    
+    public ArrayList<Organization.Type> getSupportedOrganizationTypes(){
+        return supportedOrgTypes;
     }
 }

@@ -10,20 +10,17 @@ import java.util.ArrayList;
 
 /**
  *
- * @author krish19
+ * @author balumullamuri
  */
 public class LocalClinicEnterprise extends Enterprise {
-
-    // Constructor to initialize the LocalClinicEnterprise
+    
     public LocalClinicEnterprise(String name){
         super(name,EnterpriseType.LocalClinic);
         this.addOrganizationType(Type.LocalClinic);
     }
-
-    // Method to get the supported roles for this enterprise
     @Override
     public ArrayList<Role> getSupportedRole() {
         return null;
     }
+    
 }
-

@@ -10,20 +10,18 @@ import java.util.ArrayList;
 
 /**
  *
- * @author krish19
+ * @author balumullamuri
  */
 public class GovernmentEnterprise extends Enterprise {
     
-    // Constructor to initialize the GovernmentEnterprise with name and organization type
     public GovernmentEnterprise(String name){
-        super(name, EnterpriseType.Government);
+        super(name,EnterpriseType.Government);
         this.addOrganizationType(Type.Government);
     }
     
-    // Override the getSupportedRole method to return supported roles (currently null)
     @Override
     public ArrayList<Role> getSupportedRole() {
         return null;
     }
-}
 
+}

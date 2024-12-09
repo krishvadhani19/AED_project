@@ -8,18 +8,17 @@ import java.util.ArrayList;
 
 /**
  *
- * @author krish19
+ * @author balumullamuri
  */
 public class WorkQueue {
     private ArrayList<WorkRequest> workRequestList;
 
-    // Constructor to initialize workRequestList
     public WorkQueue() {
         workRequestList = new ArrayList<WorkRequest>();
     }
 
-    // Getter method to return the workRequestList
     public ArrayList<WorkRequest> getWorkRequestList() {
         return workRequestList;
     }
+    
 }

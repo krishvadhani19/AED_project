@@ -75,57 +75,75 @@ public class ManageDoctorProfile extends javax.swing.JPanel {
         btnSave = new javax.swing.JButton();
         comboGender = new javax.swing.JComboBox();
 
-        setBackground(new java.awt.Color(255, 153, 153));
-        setForeground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(0, 153, 153));
+        setForeground(new java.awt.Color(204, 255, 204));
 
         jLabel1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(204, 255, 204));
         jLabel1.setText("Name:");
 
         jLabel2.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(204, 255, 204));
         jLabel2.setText("Contact:");
 
         jLabel3.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(204, 255, 204));
         jLabel3.setText("Address:");
 
         jLabel4.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(204, 255, 204));
         jLabel4.setText("City:");
 
         jLabel5.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(204, 255, 204));
         jLabel5.setText("State:");
 
         jLabel6.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(204, 255, 204));
         jLabel6.setText("Gender:");
 
         jLabel7.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(204, 255, 204));
         jLabel7.setText("DOB:");
 
+        txtName.setBackground(new java.awt.Color(0, 153, 153));
         txtName.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        txtName.setForeground(new java.awt.Color(204, 255, 204));
 
+        txtContact.setBackground(new java.awt.Color(0, 153, 153));
         txtContact.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
 
+        txtAddress.setBackground(new java.awt.Color(0, 153, 153));
         txtAddress.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
 
+        txtCity.setBackground(new java.awt.Color(0, 153, 153));
         txtCity.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
 
+        txtState.setBackground(new java.awt.Color(0, 153, 153));
         txtState.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
 
+        txtDOB.setBackground(new java.awt.Color(0, 153, 153));
         txtDOB.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
 
-        jLabel25.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel25.setBackground(new java.awt.Color(204, 255, 204));
         jLabel25.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel25.setForeground(new java.awt.Color(204, 255, 204));
         jLabel25.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel25.setText("Doctor Profile");
 
+        btnSave.setBackground(new java.awt.Color(0, 102, 102));
+        btnSave.setForeground(new java.awt.Color(204, 255, 204));
         btnSave.setText("Save");
-        btnSave.setBorder(new javax.swing.border.MatteBorder(null));
+        btnSave.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnSave.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSaveActionPerformed(evt);
             }
         });
 
-        comboGender.setBackground(new java.awt.Color(0, 0, 0));
+        comboGender.setBackground(new java.awt.Color(0, 153, 153));
         comboGender.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        comboGender.setForeground(new java.awt.Color(0, 153, 153));
         comboGender.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Male", "Female" }));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);

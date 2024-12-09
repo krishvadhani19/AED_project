@@ -9,12 +9,11 @@ import java.util.Arrays;
 
 /**
  *
- * @author krish19
+ * @author maka
  */
 public class DonorApplicationStatuses {
     
-    // Enum representing different request statuses
-    public enum RequestStatus {
+public enum RequestStatus {
         Submitted("Submitted"),
         Pending("Pending"),
         AddedToInventory("Added to inventory"),
@@ -24,17 +23,14 @@ public class DonorApplicationStatuses {
         
         private String value;
 
-        // Constructor to set the value for each status
         private RequestStatus(String value) {
             this.value = value;
         }
 
-        // Getter method to retrieve the status value
         public String getValue() {
             return value;
         }
 
-        // Override toString() to return the status value
         @Override
         public String toString() {
             return value;
@@ -43,12 +39,10 @@ public class DonorApplicationStatuses {
     
     ArrayList<RequestStatus> statusList;
     
-    // Constructor initializes the list of statuses
     public DonorApplicationStatuses(){
         statusList = new ArrayList<RequestStatus>(Arrays.asList(RequestStatus.values()));
     }
     
-    // Method to find a status by its string value
     public RequestStatus findDonorApplicationStatus(String status){
         for (RequestStatus rs : statusList){
             if (rs.getValue().equals(status)) return rs;
@@ -56,7 +50,6 @@ public class DonorApplicationStatuses {
         return null;
     }
     
-    // Method to get the list of all request statuses
     public ArrayList<RequestStatus> getDonorApplicationStatusList(){
         return statusList;
     }

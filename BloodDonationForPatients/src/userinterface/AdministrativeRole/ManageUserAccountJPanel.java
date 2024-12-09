@@ -137,19 +137,19 @@ public class ManageUserAccountJPanel extends javax.swing.JPanel {
             .addGap(0, 100, Short.MAX_VALUE)
         );
 
-        setBackground(new java.awt.Color(255, 153, 153));
+        setBackground(new java.awt.Color(0, 153, 153));
         setMinimumSize(new java.awt.Dimension(1000, 720));
         setPreferredSize(new java.awt.Dimension(1150, 720));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel3.setBackground(new java.awt.Color(31, 31, 31));
+        jPanel3.setBackground(new java.awt.Color(0, 102, 102));
         jPanel3.setPreferredSize(new java.awt.Dimension(926, 70));
 
-        jLabel7.setBackground(new java.awt.Color(255, 153, 153));
-        jLabel7.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel7.setBackground(new java.awt.Color(0, 153, 153));
+        jLabel7.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(204, 255, 204));
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabel7.setText("                                                          Manage Users");
+        jLabel7.setText("                                                                                                      Manage Users");
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -157,51 +157,57 @@ public class ManageUserAccountJPanel extends javax.swing.JPanel {
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, 1806, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 1818, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, 44, Short.MAX_VALUE)
-                .addContainerGap())
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                .addGap(0, 12, Short.MAX_VALUE)
+                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1830, -1));
 
-        jPanel2.setBackground(new java.awt.Color(255, 153, 153));
+        jPanel2.setBackground(new java.awt.Color(0, 102, 102));
         jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        jPanel2.setForeground(new java.awt.Color(204, 255, 204));
         jPanel2.setPreferredSize(new java.awt.Dimension(250, 400));
         jPanel2.setRequestFocusEnabled(false);
         jPanel2.setVerifyInputWhenFocusTarget(false);
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel8.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(204, 255, 204));
         jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel8.setText("Employee Credentials");
-        jPanel2.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 468, 36));
+        jPanel2.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 468, 36));
 
-        jLabel12.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
+        jLabel12.setFont(new java.awt.Font("Times New Roman", 1, 20)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(204, 255, 204));
         jLabel12.setText("Username");
         jPanel2.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 220, 100, 21));
 
-        nameSeparator.setForeground(new java.awt.Color(0, 0, 0));
+        nameSeparator.setForeground(new java.awt.Color(255, 255, 255));
         jPanel2.add(nameSeparator, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 290, 290, 10));
 
-        jLabel13.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
+        jLabel13.setFont(new java.awt.Font("Times New Roman", 1, 20)); // NOI18N
+        jLabel13.setForeground(new java.awt.Color(204, 255, 204));
         jLabel13.setText("Password");
         jPanel2.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 310, 100, 26));
 
-        nameSeparator1.setForeground(new java.awt.Color(0, 0, 0));
+        nameSeparator1.setForeground(new java.awt.Color(255, 255, 255));
         jPanel2.add(nameSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 380, 290, 10));
 
-        jLabel5.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 20)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(204, 255, 204));
         jLabel5.setText("Organization");
         jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, -1, -1));
 
+        organizationJComboBox.setBackground(new java.awt.Color(0, 102, 102));
         organizationJComboBox.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
-        organizationJComboBox.setBorder(null);
+        organizationJComboBox.setForeground(new java.awt.Color(204, 255, 204));
+        organizationJComboBox.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         organizationJComboBox.addItemListener(new java.awt.event.ItemListener() {
             public void itemStateChanged(java.awt.event.ItemEvent evt) {
                 organizationJComboBoxItemStateChanged(evt);
@@ -214,24 +220,29 @@ public class ManageUserAccountJPanel extends javax.swing.JPanel {
         });
         jPanel2.add(organizationJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 80, 280, -1));
 
-        jLabel3.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 20)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(204, 255, 204));
         jLabel3.setText("Employee");
         jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 130, -1, 30));
 
+        employeeJComboBox.setBackground(new java.awt.Color(0, 102, 102));
         employeeJComboBox.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         jPanel2.add(employeeJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 130, 280, -1));
 
-        jLabel4.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 20)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(204, 255, 204));
         jLabel4.setText("Role");
         jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 180, -1, 40));
 
+        roleJComboBox.setBackground(new java.awt.Color(0, 102, 102));
         roleJComboBox.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         jPanel2.add(roleJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 180, 280, -1));
 
-        createUserJButton.setBackground(new java.awt.Color(255, 255, 255));
-        createUserJButton.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
+        createUserJButton.setBackground(new java.awt.Color(0, 153, 153));
+        createUserJButton.setFont(new java.awt.Font("Times New Roman", 1, 20)); // NOI18N
+        createUserJButton.setForeground(new java.awt.Color(204, 255, 204));
         createUserJButton.setText("Create");
-        createUserJButton.setBorder(new javax.swing.border.MatteBorder(null));
+        createUserJButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         createUserJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 createUserJButtonActionPerformed(evt);
@@ -239,32 +250,37 @@ public class ManageUserAccountJPanel extends javax.swing.JPanel {
         });
         jPanel2.add(createUserJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 410, 110, 35));
 
+        nameJTextField.setBackground(new java.awt.Color(0, 102, 102));
         nameJTextField.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         nameJTextField.setBorder(null);
         jPanel2.add(nameJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 250, 290, 30));
 
+        passwordJTextField.setBackground(new java.awt.Color(0, 102, 102));
         passwordJTextField.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         passwordJTextField.setBorder(null);
         jPanel2.add(passwordJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 344, 290, 30));
 
-        add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, 470, 470));
+        add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 160, 470, 470));
 
         jLabel1.setBackground(new java.awt.Color(0, 0, 0));
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(204, 255, 204));
         jLabel1.setText("Enterprise:");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 200, -1, 30));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 200, -1, 30));
 
-        nameSeparator4.setForeground(new java.awt.Color(0, 0, 0));
-        add(nameSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 230, 230, 10));
+        nameSeparator4.setForeground(new java.awt.Color(255, 255, 255));
+        add(nameSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 230, 230, 10));
 
         enterpriseNameTextField1.setEditable(false);
+        enterpriseNameTextField1.setBackground(new java.awt.Color(0, 153, 153));
         enterpriseNameTextField1.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
+        enterpriseNameTextField1.setForeground(new java.awt.Color(204, 255, 204));
         enterpriseNameTextField1.setBorder(null);
-        add(enterpriseNameTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 190, 230, 30));
+        add(enterpriseNameTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 190, 230, 30));
 
-        userJTable.setBackground(new java.awt.Color(0, 0, 0));
+        userJTable.setBackground(new java.awt.Color(0, 102, 102));
         userJTable.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(204, 255, 204)));
-        userJTable.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
+        userJTable.setFont(new java.awt.Font("Times New Roman", 1, 20)); // NOI18N
         userJTable.setForeground(new java.awt.Color(255, 255, 255));
         userJTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -284,12 +300,10 @@ public class ManageUserAccountJPanel extends javax.swing.JPanel {
         });
         userJTable.setFocusable(false);
         userJTable.setGridColor(new java.awt.Color(0, 0, 0));
-        userJTable.setIntercellSpacing(new java.awt.Dimension(0, 0));
         userJTable.setRowHeight(30);
-        userJTable.setShowVerticalLines(false);
         jScrollPane2.setViewportView(userJTable);
 
-        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 260, 750, 230));
+        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 260, 750, 230));
     }// </editor-fold>//GEN-END:initComponents
 
     private void createUserJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_createUserJButtonActionPerformed

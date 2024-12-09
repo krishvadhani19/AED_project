@@ -10,11 +10,10 @@ import java.util.Date;
 
 /**
  *
- * @author krish19
+ * @author maka
  */
 public class BloodTransaction {
 
-    // Enum representing transaction type (e.g., adding or removing blood units)
     public enum TransactionType {
         In("Increase inventory"),
         Out("Decrease inventory");
@@ -31,18 +30,18 @@ public class BloodTransaction {
         }
     }
 
-    private final BloodType bloodType; // Type of blood involved in the transaction
-    private final int units; // Number of units involved in the transaction
-    private final TransactionType inOut; // Type of transaction (In/Out)
-    private final Object reference; // Reference for the transaction (e.g., order or donation)
-    private final Date timestamp; // Time of transaction creation
+    private final BloodType bloodType;
+    private final int units;
+    private final TransactionType inOut;
+    private final Object reference;
+    private final Date timestamp;
 
     public BloodTransaction(BloodType bloodType, int units, TransactionType inOut, Object reference) {
         this.bloodType = bloodType;
         this.units = units;
         this.inOut = inOut;
         this.reference = reference;
-        this.timestamp = new Date(); // Captures the transaction time
+        this.timestamp = new Date();
     }
 
     public BloodType getBloodType() {
@@ -64,4 +63,5 @@ public class BloodTransaction {
     public String getTimestamp() {
         return new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(timestamp);
     }
+
 }

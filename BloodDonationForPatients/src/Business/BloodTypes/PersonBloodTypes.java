@@ -13,7 +13,7 @@ import java.util.Map;
 
 /**
  *
- * @author krish19
+ * @author j.videlefsky
  */
 public class PersonBloodTypes {
 
@@ -28,68 +28,65 @@ public class PersonBloodTypes {
         ON("O-");
 
         private String value;
-        ArrayList<BloodType> eligibleDonors;
+        ArrayList<BloodType> eligibleDonors; 
         ArrayList<BloodType> eligibleRecipients;
-
+        
         private BloodType(String value) {
             this.value = value;
             eligibleDonors = new ArrayList<BloodType>();
             eligibleRecipients = new ArrayList<BloodType>();
         }
-
-        // Add donor compatibility for this blood type
-        public void addDonor(BloodType b) {
+        
+        public void addDonor(BloodType b){
+            eligibleDonors.add(b);
+        }
+        
+        public void addRecipient(BloodType b){
             eligibleDonors.add(b);
         }
 
-        // Add recipient compatibility for this blood type
-        public void addRecipient(BloodType b) {
-            eligibleRecipients.add(b);
-        }
-
-        // Get the string value of this blood type
         public String getValue() {
             return value;
         }
-
-        // Get the list of eligible donors
-        public ArrayList<BloodType> getEligibleDonors() {
+        
+        public ArrayList<BloodType> getEligibleDonors(){
             return eligibleDonors;
         }
 
-        // Get the list of eligible recipients
-        public ArrayList<BloodType> getEligibleRecipients() {
+        public ArrayList<BloodType> getEligibleRecipients(){
             return eligibleRecipients;
         }
-
+        
         @Override
         public String toString() {
             return value;
         }
+
     }
 
     private ArrayList<BloodType> bloodTypeList;
+    // eligible donors and recipients attributes
 
     public PersonBloodTypes() {
-        configureCompatibility(); // Configure donor-recipient compatibility
-        bloodTypeList = new ArrayList<BloodType>(Arrays.asList(BloodType.values())); // Initialize blood types list
+        configureCompatibility();
+        bloodTypeList = new ArrayList<BloodType>(Arrays.asList(BloodType.values()));
     }
 
-    // Get the complete list of blood types
+    // Add values to bloodtypes
     public ArrayList<BloodType> getBloodTypeList() {
         return bloodTypeList;
     }
 
-    // Get a list of string values of all blood types
     public ArrayList<String> getBloodTypeValuesList() {
         ArrayList<String> bloodTypeValuesList = new ArrayList<String>();
         for (BloodType bt : this.bloodTypeList) {
             bloodTypeValuesList.add(bt.getValue());
         }
+
         return bloodTypeValuesList;
     }
 
-    // Find a specific BloodType by its string value
+
     public BloodType findBloodType(String bloodTypeName) {
         for (BloodType bt : this.getBloodTypeList()) {
             if (bt.getValue().equals(bloodTypeName)) {
@@ -98,9 +95,9 @@ public class PersonBloodTypes {
         }
         return null;
     }
-
-    // Configure compatibility between blood types (donors and recipients)
-    private void configureCompatibility() {
+    
+    
+    private void configureCompatibility(){
         // AB+
         BloodType.ABP.addDonor(BloodType.ABP);
         BloodType.ABP.addDonor(BloodType.ABN);
@@ -111,7 +108,7 @@ public class PersonBloodTypes {
         BloodType.ABP.addDonor(BloodType.OP);
         BloodType.ABP.addDonor(BloodType.ON);
         BloodType.ABP.addRecipient(BloodType.ABP);
-
+        
         // AB-
         BloodType.ABN.addDonor(BloodType.ABN);
         BloodType.ABN.addDonor(BloodType.AN);
@@ -119,7 +116,7 @@ public class PersonBloodTypes {
         BloodType.ABN.addDonor(BloodType.ON);
         BloodType.ABN.addRecipient(BloodType.ABP);
         BloodType.ABN.addRecipient(BloodType.ABN);
-
+        
         // A+
         BloodType.AP.addDonor(BloodType.AP);
         BloodType.AP.addDonor(BloodType.AN);
@@ -127,7 +124,7 @@ public class PersonBloodTypes {
         BloodType.AP.addDonor(BloodType.ON);
         BloodType.AP.addRecipient(BloodType.ABP);
         BloodType.AP.addRecipient(BloodType.AP);
-
+        
         // A-
         BloodType.AN.addDonor(BloodType.AN);
         BloodType.AN.addDonor(BloodType.ON);
@@ -135,7 +132,7 @@ public class PersonBloodTypes {
         BloodType.AN.addRecipient(BloodType.ABN);
         BloodType.AN.addRecipient(BloodType.AP);
         BloodType.AN.addRecipient(BloodType.AN);
-
+        
         // B+
         BloodType.BP.addDonor(BloodType.BP);
         BloodType.BP.addDonor(BloodType.BN);
@@ -143,7 +140,7 @@ public class PersonBloodTypes {
         BloodType.BP.addDonor(BloodType.ON);
         BloodType.BP.addRecipient(BloodType.ABP);
         BloodType.BP.addRecipient(BloodType.BN);
-
+        
         // B-
         BloodType.BN.addDonor(BloodType.BN);
         BloodType.BN.addDonor(BloodType.ON);
@@ -151,7 +148,7 @@ public class PersonBloodTypes {
         BloodType.BN.addRecipient(BloodType.ABN);
         BloodType.BN.addRecipient(BloodType.BP);
         BloodType.BN.addRecipient(BloodType.BN);
-
+        
         // O+
         BloodType.OP.addDonor(BloodType.OP);
         BloodType.OP.addDonor(BloodType.ON);
@@ -159,7 +156,7 @@ public class PersonBloodTypes {
         BloodType.OP.addRecipient(BloodType.AP);
         BloodType.OP.addRecipient(BloodType.BP);
         BloodType.OP.addRecipient(BloodType.OP);
-
+        
         // O-
         BloodType.ON.addDonor(BloodType.ON);
         BloodType.ON.addRecipient(BloodType.ABP);
@@ -169,5 +166,7 @@ public class PersonBloodTypes {
         BloodType.ON.addRecipient(BloodType.AN);
         BloodType.ON.addRecipient(BloodType.OP);
         BloodType.ON.addRecipient(BloodType.ON);
+        
     }
+    
 }

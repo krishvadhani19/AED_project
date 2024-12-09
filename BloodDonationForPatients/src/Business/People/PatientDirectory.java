@@ -8,32 +8,26 @@ import java.util.ArrayList;
 
 /**
  *
- * @author krish19
+ * @author balumullamuri
  */
 public class PatientDirectory {
     
-    private ArrayList<Patient> patientList;
+     private ArrayList<Patient> patientList;
 
-    // Constructor to initialize the patient list
+    public ArrayList<Patient> getPatientList() {return patientList;}
+    public void setPatientList(ArrayList<Patient> patientList) {this.patientList = patientList;}
+    
     public PatientDirectory(){
         patientList = new ArrayList<Patient>();
+        
     }
 
-    // Method to retrieve the list of patients
-    public ArrayList<Patient> getPatientList() {
-        return patientList;
-    }
-    
-    // Method to set the list of patients
-    public void setPatientList(ArrayList<Patient> patientList) {
-        this.patientList = patientList;
-    }
-
-    // Method to add a new patient to the list
     public Patient addPatient(Patient patient)
     {
+//        Patient patient = new Patient();
         patientList.add(patient);
         return patient;
+        
     }
-}
 
+}

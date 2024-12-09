@@ -11,12 +11,12 @@ import java.util.Date;
 
 /**
  *
- * @author krish19
+ * @author balumullamuri
  */
 public class DonorRequest {
     private DonorRequestDirectory directory;
-
     // Donor Attributes
+    
     private String donorID;
     private String name;
     private Date dob;
@@ -39,12 +39,10 @@ public class DonorRequest {
     private byte[] dP;
     private int numberOfUnits;
 
-    // Constructor to initialize DonorRequest with directory
     public DonorRequest(DonorRequestDirectory directory) {
         this.directory = directory;
     }
 
-    // Getter and Setter for Image Path and Display Picture (dP)
     public byte[] getdP() {
         return dP;
     }
@@ -61,16 +59,7 @@ public class DonorRequest {
         this.imagePath = imagePath;
     }
 
-    // Getter and Setter for Donor's ID
-    public String getDonorID() {
-        return donorID;
-    }
-
-    public void setDonorID(String donorID) {
-        this.donorID = donorID;
-    }
-
-    // Getter and Setter for Donor's personal information
+// Getter Setter Functions
     public String getName() {
         return name;
     }
@@ -85,6 +74,14 @@ public class DonorRequest {
 
     public void setContact(long contact) {
         this.contact = contact;
+    }
+
+    public String getDonorID() {
+        return donorID;
+    }
+
+    public void setDonorID(String donorID) {
+        this.donorID = donorID;
     }
 
     public Date getDob() {
@@ -119,7 +116,6 @@ public class DonorRequest {
         this.bloodType = bloodType;
     }
 
-    // Getter and Setter for Donor's Address
     public String getStreetAddress() {
         return streetAddress;
     }
@@ -164,7 +160,6 @@ public class DonorRequest {
         return status;
     }
 
-    // Set Status and perform specific action if status is 'AddedToInventory'
     public void setStatus(String status) {
         if (DonorApplicationStatuses.RequestStatus.AddedToInventory.getValue().equals(status)) {
             this.directory.registerDonorApplicationForInventory(bloodType, this);
@@ -172,7 +167,6 @@ public class DonorRequest {
         this.status = status;
     }
 
-    // Getter and Setter for Last Donation Date
     public Date getLastDonationDate() {
         return lastDonationDate;
     }
@@ -181,7 +175,6 @@ public class DonorRequest {
         this.lastDonationDate = lastDonationDate;
     }
 
-    // Health-related attributes (Chronic Conditions, Well-being, etc.)
     public boolean isChronicConditions() {
         return chronicConditions;
     }
@@ -206,7 +199,11 @@ public class DonorRequest {
         this.selfDrugUse = selfDrugUse;
     }
 
-    // Getter and Setter for Contagious Diseases
+    @Override
+    public String toString() {
+        return donorID;
+    }
+
     public boolean isContagiousDiseases() {
         return contagiousDiseases;
     }
@@ -215,9 +212,4 @@ public class DonorRequest {
         this.contagiousDiseases = contagiousDiseases;
     }
 
-    // toString method to return donor ID as string representation
-    @Override
-    public String toString() {
-        return donorID;
-    }
 }

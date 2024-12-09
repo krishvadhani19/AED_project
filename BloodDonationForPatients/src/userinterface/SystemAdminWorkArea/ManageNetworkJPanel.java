@@ -87,14 +87,14 @@ public class ManageNetworkJPanel extends javax.swing.JPanel {
         jLabel12 = new javax.swing.JLabel();
         btnDeleteNetwork = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(255, 153, 153));
+        setBackground(new java.awt.Color(0, 153, 153));
         setMinimumSize(new java.awt.Dimension(1150, 670));
         setPreferredSize(new java.awt.Dimension(1150, 720));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jScrollPane1.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
 
-        tblNetwork.setBackground(new java.awt.Color(0, 0, 0));
+        tblNetwork.setBackground(new java.awt.Color(0, 102, 102));
         tblNetwork.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(204, 255, 204)));
         tblNetwork.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
         tblNetwork.setForeground(new java.awt.Color(255, 255, 255));
@@ -127,22 +127,28 @@ public class ManageNetworkJPanel extends javax.swing.JPanel {
 
         add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 110, 520, 270));
 
-        jPanel2.setBackground(new java.awt.Color(241, 250, 238));
+        jPanel2.setBackground(new java.awt.Color(0, 102, 102));
         jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 255, 204)));
         jPanel2.setPreferredSize(new java.awt.Dimension(250, 400));
         jPanel2.setRequestFocusEnabled(false);
         jPanel2.setVerifyInputWhenFocusTarget(false);
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel1.setBackground(new java.awt.Color(0, 102, 102));
         jLabel1.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(204, 255, 204));
         jLabel1.setText("Name:");
         jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 103, -1, -1));
 
+        jLabel2.setBackground(new java.awt.Color(0, 102, 102));
         jLabel2.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(204, 255, 204));
         jLabel2.setText("State:");
         jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 152, -1, -1));
 
+        txtNetWorkName.setBackground(new java.awt.Color(0, 102, 102));
         txtNetWorkName.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
+        txtNetWorkName.setForeground(new java.awt.Color(204, 255, 204));
         txtNetWorkName.setText("WorldCord");
         txtNetWorkName.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -151,19 +157,27 @@ public class ManageNetworkJPanel extends javax.swing.JPanel {
         });
         jPanel2.add(txtNetWorkName, new org.netbeans.lib.awtextra.AbsoluteConstraints(198, 100, 141, -1));
 
+        txtState.setBackground(new java.awt.Color(0, 102, 102));
         txtState.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
+        txtState.setForeground(new java.awt.Color(204, 255, 204));
         txtState.setText("MA");
         jPanel2.add(txtState, new org.netbeans.lib.awtextra.AbsoluteConstraints(198, 149, 141, -1));
 
+        jLabel3.setBackground(new java.awt.Color(0, 102, 102));
         jLabel3.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(204, 255, 204));
         jLabel3.setText("Country:");
         jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 200, -1, -1));
 
+        txtCountry.setBackground(new java.awt.Color(0, 102, 102));
         txtCountry.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
+        txtCountry.setForeground(new java.awt.Color(204, 255, 204));
         txtCountry.setText("USA");
         jPanel2.add(txtCountry, new org.netbeans.lib.awtextra.AbsoluteConstraints(198, 197, 141, -1));
 
+        btnCreateNetwork.setBackground(new java.awt.Color(0, 153, 153));
         btnCreateNetwork.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
+        btnCreateNetwork.setForeground(new java.awt.Color(204, 255, 204));
         btnCreateNetwork.setText("Create Network");
         btnCreateNetwork.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnCreateNetwork.addActionListener(new java.awt.event.ActionListener() {
@@ -173,18 +187,20 @@ public class ManageNetworkJPanel extends javax.swing.JPanel {
         });
         jPanel2.add(btnCreateNetwork, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 290, 180, 35));
 
+        jLabel4.setBackground(new java.awt.Color(0, 102, 102));
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(204, 255, 204));
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setText("Create Network");
         jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, 326, 36));
 
         add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 110, 380, 440));
 
-        jPanel3.setBackground(new java.awt.Color(102, 102, 102));
+        jPanel3.setBackground(new java.awt.Color(0, 102, 102));
         jPanel3.setPreferredSize(new java.awt.Dimension(926, 70));
 
         jLabel12.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel12.setForeground(new java.awt.Color(204, 255, 204));
         jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel12.setText("Manage Network");
 
@@ -195,19 +211,21 @@ public class ManageNetworkJPanel extends javax.swing.JPanel {
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 948, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(542, Short.MAX_VALUE))
+                .addContainerGap(546, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel12, javax.swing.GroupLayout.DEFAULT_SIZE, 44, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1500, -1));
 
+        btnDeleteNetwork.setBackground(new java.awt.Color(0, 102, 102));
         btnDeleteNetwork.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
+        btnDeleteNetwork.setForeground(new java.awt.Color(204, 255, 204));
         btnDeleteNetwork.setText("Delete Network");
         btnDeleteNetwork.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnDeleteNetwork.addActionListener(new java.awt.event.ActionListener() {

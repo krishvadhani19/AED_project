@@ -11,21 +11,20 @@ import java.util.ArrayList;
 
 /**
  *
- * @author krish19
+ * @author saiku
  */
 public class LogisticsOrganization extends Organization {
     
-    // Constructor to initialize the LogisticsOrganization with a name and parent directory
     public LogisticsOrganization(String name, OrganizationDirectory parent) {
         super(name == null ? Organization.Type.Logistics.getValue() : name, parent);
     }
     
-    // Method to get the supported roles for the LogisticsOrganization
     @Override
     public ArrayList<Role> getSupportedRole() {
         ArrayList<Role> roles = new ArrayList();
-        roles.add(new LogisticsOfficerRole()); // Add LogisticsOfficerRole to the list of supported roles
+        roles.add(new LogisticsOfficerRole());
         return roles;
     }
+     
+    
 }
-

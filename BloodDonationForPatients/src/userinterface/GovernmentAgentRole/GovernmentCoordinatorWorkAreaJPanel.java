@@ -82,12 +82,13 @@ public class GovernmentCoordinatorWorkAreaJPanel extends javax.swing.JPanel {
         setPreferredSize(new java.awt.Dimension(800, 500));
         setLayout(new java.awt.BorderLayout());
 
-        Header.setBackground(new java.awt.Color(15, 29, 52));
+        Header.setBackground(new java.awt.Color(0, 102, 102));
+        Header.setForeground(new java.awt.Color(204, 255, 204));
         Header.setPreferredSize(new java.awt.Dimension(800, 50));
         Header.setLayout(new java.awt.GridLayout(1, 0));
 
         BtnDonorStatus.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        BtnDonorStatus.setForeground(new java.awt.Color(255, 255, 255));
+        BtnDonorStatus.setForeground(new java.awt.Color(204, 255, 204));
         BtnDonorStatus.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         BtnDonorStatus.setText("Blood Request Forms");
         BtnDonorStatus.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -100,7 +101,7 @@ public class GovernmentCoordinatorWorkAreaJPanel extends javax.swing.JPanel {
 
         add(Header, java.awt.BorderLayout.PAGE_START);
 
-        userProcessContainer.setBackground(new java.awt.Color(255, 153, 153));
+        userProcessContainer.setBackground(new java.awt.Color(0, 153, 153));
         userProcessContainer.setLayout(new java.awt.CardLayout());
         add(userProcessContainer, java.awt.BorderLayout.CENTER);
     }// </editor-fold>//GEN-END:initComponents

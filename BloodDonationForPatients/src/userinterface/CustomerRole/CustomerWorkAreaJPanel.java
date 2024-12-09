@@ -72,8 +72,10 @@ public class CustomerWorkAreaJPanel extends javax.swing.JPanel {
         splitPane.setMinimumSize(new java.awt.Dimension(1280, 720));
         splitPane.setPreferredSize(new java.awt.Dimension(1280, 720));
 
-        actionPanel.setBackground(new java.awt.Color(255, 153, 153));
+        actionPanel.setBackground(new java.awt.Color(0, 102, 102));
 
+        signInButton.setBackground(new java.awt.Color(0, 153, 153));
+        signInButton.setForeground(new java.awt.Color(204, 255, 204));
         signInButton.setText("Sign-in");
         signInButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -100,7 +102,7 @@ public class CustomerWorkAreaJPanel extends javax.swing.JPanel {
 
         splitPane.setTopComponent(actionPanel);
 
-        customerProcessContainer.setBackground(new java.awt.Color(255, 153, 153));
+        customerProcessContainer.setBackground(new java.awt.Color(0, 153, 153));
         customerProcessContainer.setLayout(new java.awt.CardLayout());
         splitPane.setRightComponent(customerProcessContainer);
 

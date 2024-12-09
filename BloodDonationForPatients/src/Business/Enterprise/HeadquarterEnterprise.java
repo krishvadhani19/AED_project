@@ -10,20 +10,17 @@ import java.util.ArrayList;
 
 /**
  *
- * @author krish19
+ * @author balumullamuri
  */
 public class HeadquarterEnterprise extends Enterprise {
-
-    // Constructor to initialize the HeadquarterEnterprise with a name
-    public HeadquarterEnterprise(String name){
-        super(name, EnterpriseType.Headquarter);  // Calls the constructor of the superclass (Enterprise)
-        this.addOrganizationType(Type.Headquarter); // Adds the organization type as Headquarter
-    }
     
-    // Method to return supported roles (currently not implemented)
+    public HeadquarterEnterprise(String name){
+        super(name,EnterpriseType.Headquarter);
+        this.addOrganizationType(Type.Headquarter);
+    }
     @Override
     public ArrayList<Role> getSupportedRole() {
-        return null; // Returning null as there are no supported roles defined yet
+        return null;
     }
+    
 }
-

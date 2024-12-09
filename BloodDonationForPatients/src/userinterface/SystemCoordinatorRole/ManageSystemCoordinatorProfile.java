@@ -79,58 +79,74 @@ public class ManageSystemCoordinatorProfile extends javax.swing.JPanel {
         comboGender = new javax.swing.JComboBox();
         jLabel9 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(255, 153, 153));
+        setBackground(new java.awt.Color(0, 153, 153));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(204, 255, 204));
         jLabel1.setText("Name:");
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(54, 50, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(204, 255, 204));
         jLabel2.setText("Contact:");
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(54, 80, -1, -1));
 
         jLabel3.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(204, 255, 204));
         jLabel3.setText("Address:");
         add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(54, 110, -1, -1));
 
         jLabel4.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(204, 255, 204));
         jLabel4.setText("City:");
         add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(54, 140, -1, -1));
 
         jLabel5.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(204, 255, 204));
         jLabel5.setText("State:");
         add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(54, 170, -1, -1));
 
         jLabel6.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(204, 255, 204));
         jLabel6.setText("Gender:");
         add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(54, 200, -1, -1));
 
         jLabel7.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(204, 255, 204));
         jLabel7.setText("DOB:");
         add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(54, 236, -1, -1));
 
+        txtName.setBackground(new java.awt.Color(0, 153, 153));
         txtName.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         add(txtName, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 44, 146, -1));
 
+        txtContact.setBackground(new java.awt.Color(0, 153, 153));
         txtContact.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         add(txtContact, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 74, 146, -1));
 
+        txtAddress.setBackground(new java.awt.Color(0, 153, 153));
         txtAddress.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         add(txtAddress, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 104, 146, -1));
 
+        txtCity.setBackground(new java.awt.Color(0, 153, 153));
         txtCity.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         add(txtCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 134, 146, -1));
 
+        txtState.setBackground(new java.awt.Color(0, 153, 153));
         txtState.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         add(txtState, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 164, 146, -1));
 
+        txtSpecialization.setBackground(new java.awt.Color(0, 153, 153));
         txtSpecialization.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         add(txtSpecialization, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 280, 146, -1));
 
+        txtDOB.setBackground(new java.awt.Color(0, 153, 153));
         txtDOB.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         add(txtDOB, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 233, 146, -1));
 
+        btnSave.setBackground(new java.awt.Color(0, 102, 102));
+        btnSave.setForeground(new java.awt.Color(204, 255, 204));
         btnSave.setText("Save");
         btnSave.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -139,11 +155,14 @@ public class ManageSystemCoordinatorProfile extends javax.swing.JPanel {
         });
         add(btnSave, new org.netbeans.lib.awtextra.AbsoluteConstraints(186, 325, -1, -1));
 
+        comboGender.setBackground(new java.awt.Color(0, 153, 153));
         comboGender.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        comboGender.setForeground(new java.awt.Color(204, 255, 204));
         comboGender.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Male", "Female" }));
         add(comboGender, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 197, -1, -1));
 
         jLabel9.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(204, 255, 204));
         jLabel9.setText("Specialization:");
         add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 280, -1, -1));
     }// </editor-fold>//GEN-END:initComponents

@@ -41,11 +41,13 @@ public class PickCustomerActionJPanel extends javax.swing.JPanel {
         donorSignUpBtn = new javax.swing.JButton();
         patientRegistrationBtn = new javax.swing.JButton();
         trackID = new javax.swing.JButton();
-        jLabel3 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(255, 153, 153));
+        setBackground(new java.awt.Color(0, 153, 153));
         setPreferredSize(new java.awt.Dimension(1280, 720));
 
+        donorSignUpBtn.setBackground(new java.awt.Color(0, 102, 102));
+        donorSignUpBtn.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        donorSignUpBtn.setForeground(new java.awt.Color(204, 255, 204));
         donorSignUpBtn.setText("Donate");
         donorSignUpBtn.setBorder(new javax.swing.border.MatteBorder(null));
         donorSignUpBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -54,6 +56,9 @@ public class PickCustomerActionJPanel extends javax.swing.JPanel {
             }
         });
 
+        patientRegistrationBtn.setBackground(new java.awt.Color(0, 102, 102));
+        patientRegistrationBtn.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        patientRegistrationBtn.setForeground(new java.awt.Color(204, 255, 204));
         patientRegistrationBtn.setText("Request");
         patientRegistrationBtn.setBorder(new javax.swing.border.MatteBorder(null));
         patientRegistrationBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -62,6 +67,9 @@ public class PickCustomerActionJPanel extends javax.swing.JPanel {
             }
         });
 
+        trackID.setBackground(new java.awt.Color(0, 102, 102));
+        trackID.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        trackID.setForeground(new java.awt.Color(204, 255, 204));
         trackID.setText("Track Your Status");
         trackID.setBorder(new javax.swing.border.MatteBorder(null));
         trackID.addActionListener(new java.awt.event.ActionListener() {
@@ -70,34 +78,32 @@ public class PickCustomerActionJPanel extends javax.swing.JPanel {
             }
         });
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/world-cord-logo.png"))); // NOI18N
-        jLabel3.setPreferredSize(new java.awt.Dimension(65, 65));
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(21, 21, 21)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(321, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(trackID, javax.swing.GroupLayout.PREFERRED_SIZE, 336, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(patientRegistrationBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 336, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(donorSignUpBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 337, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(859, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(donorSignUpBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 337, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(31, 31, 31)
+                        .addComponent(patientRegistrationBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 336, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(trackID, javax.swing.GroupLayout.PREFERRED_SIZE, 336, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(182, 182, 182)))
+                .addGap(255, 255, 255))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(22, 22, 22)
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 279, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(donorSignUpBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(patientRegistrationBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(trackID, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(287, Short.MAX_VALUE))
+                .addGap(270, 270, 270)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(donorSignUpBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(patientRegistrationBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(35, 35, 35)
+                .addComponent(trackID, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(275, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -126,7 +132,6 @@ public class PickCustomerActionJPanel extends javax.swing.JPanel {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton donorSignUpBtn;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JButton patientRegistrationBtn;
     private javax.swing.JButton trackID;
     // End of variables declaration//GEN-END:variables

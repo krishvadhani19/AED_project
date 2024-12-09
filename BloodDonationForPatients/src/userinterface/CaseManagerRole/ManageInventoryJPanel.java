@@ -41,24 +41,26 @@ public class ManageInventoryJPanel extends javax.swing.JPanel {
         lblTableTitle = new javax.swing.JLabel();
         btnPrepareOrder1 = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(255, 153, 153));
+        setBackground(new java.awt.Color(0, 153, 153));
         setMinimumSize(new java.awt.Dimension(1100, 720));
         setPreferredSize(new java.awt.Dimension(1150, 720));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel3.setBackground(new java.awt.Color(31, 31, 31));
+        jPanel3.setBackground(new java.awt.Color(0, 102, 102));
         jPanel3.setPreferredSize(new java.awt.Dimension(926, 70));
         jPanel3.setLayout(new java.awt.GridLayout(1, 0));
 
-        lblPageTitle.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        lblPageTitle.setForeground(new java.awt.Color(255, 255, 255));
+        lblPageTitle.setBackground(new java.awt.Color(0, 153, 153));
+        lblPageTitle.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        lblPageTitle.setForeground(new java.awt.Color(204, 255, 204));
         lblPageTitle.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         lblPageTitle.setText("                                                                         Manage Inventory");
         jPanel3.add(lblPageTitle);
 
         add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1800, -1));
 
-        tblBloodAvailability.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
+        tblBloodAvailability.setBackground(new java.awt.Color(0, 102, 102));
+        tblBloodAvailability.setFont(new java.awt.Font("Times New Roman", 1, 20)); // NOI18N
         tblBloodAvailability.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -87,14 +89,16 @@ public class ManageInventoryJPanel extends javax.swing.JPanel {
 
         add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 130, 1100, 170));
 
-        lblTableTitle.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        lblTableTitle.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        lblTableTitle.setForeground(new java.awt.Color(204, 255, 204));
         lblTableTitle.setText("Current Inventory Balance");
         add(lblTableTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 80, 330, 30));
 
-        btnPrepareOrder1.setBackground(new java.awt.Color(204, 204, 204));
+        btnPrepareOrder1.setBackground(new java.awt.Color(0, 102, 102));
         btnPrepareOrder1.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
+        btnPrepareOrder1.setForeground(new java.awt.Color(204, 255, 204));
         btnPrepareOrder1.setText("<< Back");
-        btnPrepareOrder1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnPrepareOrder1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnPrepareOrder1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnPrepareOrder1ActionPerformed(evt);

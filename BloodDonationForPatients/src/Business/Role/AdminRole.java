@@ -16,14 +16,13 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author krish19
+ * @author balumullamuri
  */
 public class AdminRole extends Role {
-
-    // Method to create the admin work area
+    
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSystem business, Network network) {
-        // Returns an instance of AdminWorkAreaJPanel with necessary parameters
         return new AdminWorkAreaJPanel(enterprise, business, network);
     }
+    
 }
